@@ -15,6 +15,8 @@ class FileCacheManager: public CacheManager {
 
 private:
         unordered_map<string, string> cache;    // O(1) average search map, O(N) worse case.
+        
+        string& cacheFileName;
 
 public:
 
