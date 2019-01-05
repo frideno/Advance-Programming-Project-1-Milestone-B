@@ -3,17 +3,27 @@
 //
 
 #include "FileCacheManager.h"
-template<class Problem, class Solution>
-bool FileCacheManager<Problem, Solution>::isSolutionExists(const Problem &p) const {
-    return false;
+
+
+bool FileCacheManager::isSolutionExists(const std::string &problem) const {
+
+    // returns true if the cache map has the input problem.
+    return (cache.count(problem) != 0);
 }
 
-template<class Problem, class Solution>
-Solution FileCacheManager<Problem, Solution>::getSolution(const Problem &p) const {
-    return nullptr;
+std::string FileCacheManager::getSolution(const std::string &problem) const {
+
+    // returns nullptr if the problem solution does not exsists
+
+    if (cache.count(problem) == 0) {
+        return nullptr;
+    }
+
+    // else, return the solution in avergae O(1).
+    return cache.at(problem);
 }
 
-template<class Problem, class Solution>
-void FileCacheManager<Problem, Solution>::saveSolution(const Problem &p, const Solution &s) const {
+void FileCacheManager::saveSolution(const std::string &problem, const std::string &solution) {
 
+    // sets cache in problem to be solution.
 }

@@ -7,16 +7,25 @@
 
 
 #include "CacheManager.h"
+#include <unordered_map>
 
-template < class Problem, class Solution>
-        class FileCacheManager: public CacheManager<Problem, Solution> {
-            bool isSolutionExists(const Problem &p) const override;
+using namespace std;
 
-            Solution getSolution(const Problem &p) const override;
+class FileCacheManager: public CacheManager {
 
-            void saveSolution(const Problem &p, const Solution &s) const override;
+private:
+        unordered_map<string&, string&> cache;    // O(1) average search map, O(N) worse case.
 
-        };
+public:
+
+    bool isSolutionExists(const std::string &problem) const override;
+
+    std::string getSolution(const std::string &problem) const override;
+
+    void saveSolution(const std::string &problem, const std::string &solution) override;
+
+
+};
 
 
 
