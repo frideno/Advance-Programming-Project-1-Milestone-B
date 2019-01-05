@@ -4,6 +4,14 @@
 
 #include "FileCacheManager.h"
 
+FileCacheManager::FileCacheManager() {
+
+    cache = unordered_map<string, string>();
+}
+
+FileCacheManager::~FileCacheManager() {
+    delete &cache;
+}
 
 bool FileCacheManager::isSolutionExists(const std::string &problem) const {
 
@@ -26,4 +34,7 @@ std::string FileCacheManager::getSolution(const std::string &problem) const {
 void FileCacheManager::saveSolution(const std::string &problem, const std::string &solution) {
 
     // sets cache in problem to be solution.
+    cache[problem] = solution;
 }
+
+

@@ -14,9 +14,12 @@ using namespace std;
 class FileCacheManager: public CacheManager {
 
 private:
-        unordered_map<string&, string&> cache;    // O(1) average search map, O(N) worse case.
+        unordered_map<string, string> cache;    // O(1) average search map, O(N) worse case.
 
 public:
+
+    // constructor:
+    FileCacheManager();
 
     bool isSolutionExists(const std::string &problem) const override;
 
@@ -24,7 +27,8 @@ public:
 
     void saveSolution(const std::string &problem, const std::string &solution) override;
 
-
+    // destructor.
+    ~FileCacheManager();
 };
 
 
