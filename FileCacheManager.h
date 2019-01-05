@@ -21,7 +21,7 @@ private:
 public:
 
     // constructor:
-    FileCacheManager();
+    FileCacheManager(string cacheFileName);
 
     bool isSolutionExists(const std::string &problem) const override;
 
