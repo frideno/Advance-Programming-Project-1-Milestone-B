@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Advance_Programming_1_milestone2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Advance_Programming_1_milestone2">
+				<Option output="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Advance_Programming_1_milestone2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advance_Programming_1_milestone2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Advance_Programming_1_milestone2/fast">
+				<Option output="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Advance_Programming_1_milestone2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advance_Programming_1_milestone2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/CacheManager.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/ClientHandler.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/ClientHandler.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/FileCacheManager.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/FileCacheManager.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/MySerialServer.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/MySerialServer.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/Server.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/main.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
