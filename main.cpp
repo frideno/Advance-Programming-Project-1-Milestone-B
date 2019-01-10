@@ -1,12 +1,11 @@
 #include <iostream>
-#include "CacheManager.h"
 #include "FileCacheManager.h"
 
 int main() {
 
     // file cache manager test:
 
-    FileCacheManager c;
+    FileCacheManager c("../cache.txt");
     string s;
     for (int i =0; i< 5; i++) {
         cin >> s;

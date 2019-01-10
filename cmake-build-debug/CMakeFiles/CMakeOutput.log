@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2b62f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2b62f.dir/build.make CMakeFiles/cmTC_2b62f.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2b62f.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_2b62f.dir/testCCompiler.c.o   -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_2b62f
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b62f.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_2b62f.dir/testCCompiler.c.o  -o cmTC_2b62f 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ae286/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae286.dir/build.make CMakeFiles/cmTC_ae286.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae286.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ae286.dir/testCCompiler.c.o   -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ae286
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae286.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_ae286.dir/testCCompiler.c.o  -o cmTC_ae286 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b0195/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b0195.dir/build.make CMakeFiles/cmTC_b0195.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o   -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_b0195
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0195.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o  -o cmTC_b0195 
+Run Build Command:"/usr/bin/make" "cmTC_21791/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21791.dir/build.make CMakeFiles/cmTC_21791.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o   -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_21791
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21791.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o  -o cmTC_21791 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 4.8.5 (Ubuntu 4.8.5-4ubuntu8) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b0195' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_b0195 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21791' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_21791 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b0195/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b0195.dir/build.make CMakeFiles/cmTC_b0195.dir/build]
-  ignore line: [make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o   -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_b0195]
-  ignore line: [/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0195.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o  -o cmTC_b0195 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_21791/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_21791.dir/build.make CMakeFiles/cmTC_21791.dir/build]
+  ignore line: [make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o   -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_21791]
+  ignore line: [/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21791.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o  -o cmTC_21791 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -85,8 +85,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.5 (Ubuntu 4.8.5-4ubuntu8) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b0195' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_b0195 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21791' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_21791 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -99,7 +99,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b0195] ==> ignore
+    arg [cmTC_21791] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -111,7 +111,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_b0195.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_21791.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -139,17 +139,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5bfc4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5bfc4.dir/build.make CMakeFiles/cmTC_5bfc4.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5bfc4.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_5bfc4.dir/feature_tests.c.o   -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_5bfc4
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bfc4.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_5bfc4.dir/feature_tests.c.o  -o cmTC_5bfc4 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_72cdb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_72cdb.dir/build.make CMakeFiles/cmTC_72cdb.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72cdb.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_72cdb.dir/feature_tests.c.o   -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_72cdb
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72cdb.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_72cdb.dir/feature_tests.c.o  -o cmTC_72cdb 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -159,17 +159,17 @@ make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_16c72/fast"
-/usr/bin/make -f CMakeFiles/cmTC_16c72.dir/build.make CMakeFiles/cmTC_16c72.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_16c72.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_16c72.dir/feature_tests.c.o   -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_16c72
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16c72.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_16c72.dir/feature_tests.c.o  -o cmTC_16c72 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_07fdb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_07fdb.dir/build.make CMakeFiles/cmTC_07fdb.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07fdb.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_07fdb.dir/feature_tests.c.o   -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_07fdb
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07fdb.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_07fdb.dir/feature_tests.c.o  -o cmTC_07fdb 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -179,17 +179,17 @@ make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_31100/fast"
-/usr/bin/make -f CMakeFiles/cmTC_31100.dir/build.make CMakeFiles/cmTC_31100.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_31100.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_31100.dir/feature_tests.c.o   -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_31100
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31100.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_31100.dir/feature_tests.c.o  -o cmTC_31100 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_eef05/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eef05.dir/build.make CMakeFiles/cmTC_eef05.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eef05.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_eef05.dir/feature_tests.c.o   -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_eef05
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eef05.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_eef05.dir/feature_tests.c.o  -o cmTC_eef05 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -197,30 +197,30 @@ make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c67a1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c67a1.dir/build.make CMakeFiles/cmTC_c67a1.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c67a1.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_c67a1.dir/testCXXCompiler.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_c67a1
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c67a1.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_c67a1.dir/testCXXCompiler.cxx.o  -o cmTC_c67a1 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bd589/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd589.dir/build.make CMakeFiles/cmTC_bd589.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd589.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_bd589.dir/testCXXCompiler.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_bd589
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd589.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_bd589.dir/testCXXCompiler.cxx.o  -o cmTC_bd589 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_60b5c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_60b5c.dir/build.make CMakeFiles/cmTC_60b5c.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_60b5c
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60b5c.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_60b5c 
+Run Build Command:"/usr/bin/make" "cmTC_5e80c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5e80c.dir/build.make CMakeFiles/cmTC_5e80c.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_5e80c
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e80c.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5e80c 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -232,24 +232,24 @@ Thread model: posix
 gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60b5c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cchqk2YZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_60b5c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60b5c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5e80c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwUs4od.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e80c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5e80c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_60b5c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_60b5c.dir/build.make CMakeFiles/cmTC_60b5c.dir/build]
-  ignore line: [make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_60b5c]
-  ignore line: [/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60b5c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_60b5c ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5e80c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5e80c.dir/build.make CMakeFiles/cmTC_5e80c.dir/build]
+  ignore line: [make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/57/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_5e80c]
+  ignore line: [/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e80c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5e80c ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -261,13 +261,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60b5c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cchqk2YZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_60b5c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5e80c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwUs4od.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5e80c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cchqk2YZ.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwUs4od.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -286,7 +286,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_60b5c] ==> ignore
+    arg [cmTC_5e80c] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -298,7 +298,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_60b5c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_5e80c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -324,17 +324,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6d3ab/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6d3ab.dir/build.make CMakeFiles/cmTC_6d3ab.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6d3ab.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_6d3ab.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_6d3ab
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d3ab.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_6d3ab.dir/feature_tests.cxx.o  -o cmTC_6d3ab 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_7268c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7268c.dir/build.make CMakeFiles/cmTC_7268c.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7268c.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_7268c.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7268c
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7268c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_7268c.dir/feature_tests.cxx.o  -o cmTC_7268c 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -397,17 +397,17 @@ make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b4f97/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b4f97.dir/build.make CMakeFiles/cmTC_b4f97.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b4f97.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_b4f97.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b4f97
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4f97.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_b4f97.dir/feature_tests.cxx.o  -o cmTC_b4f97 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_221cf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_221cf.dir/build.make CMakeFiles/cmTC_221cf.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_221cf.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_221cf.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_221cf
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_221cf.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_221cf.dir/feature_tests.cxx.o  -o cmTC_221cf 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -470,17 +470,17 @@ make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_55f1d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_55f1d.dir/build.make CMakeFiles/cmTC_55f1d.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_55f1d.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_55f1d.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_55f1d
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55f1d.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_55f1d.dir/feature_tests.cxx.o  -o cmTC_55f1d 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9dddd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9dddd.dir/build.make CMakeFiles/cmTC_9dddd.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9dddd.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_9dddd.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9dddd
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dddd.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_9dddd.dir/feature_tests.cxx.o  -o cmTC_9dddd 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -543,17 +543,17 @@ make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c2e55/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c2e55.dir/build.make CMakeFiles/cmTC_c2e55.dir/build
-make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c2e55.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_c2e55.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c2e55
-/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2e55.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_c2e55.dir/feature_tests.cxx.o  -o cmTC_c2e55 
-make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bb1ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb1ef.dir/build.make CMakeFiles/cmTC_bb1ef.dir/build
+make[1]: Entering directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bb1ef.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_bb1ef.dir/feature_tests.cxx.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bb1ef
+/snap/clion/57/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb1ef.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_bb1ef.dir/feature_tests.cxx.o  -o cmTC_bb1ef 
+make[1]: Leaving directory '/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

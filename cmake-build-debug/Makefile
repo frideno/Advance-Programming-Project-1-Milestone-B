@@ -48,10 +48,10 @@ RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B
+CMAKE_SOURCE_DIR = /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug
+CMAKE_BINARY_DIR = /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ Advance_Programming_1_milestone2: cmake_check_build_system
 Advance_Programming_1_milestone2/fast:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/build
 .PHONY : Advance_Programming_1_milestone2/fast
+
+BestFirstSearch.o: BestFirstSearch.cpp.o
+
+.PHONY : BestFirstSearch.o
+
+# target to build an object file
+BestFirstSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o
+.PHONY : BestFirstSearch.cpp.o
+
+BestFirstSearch.i: BestFirstSearch.cpp.i
+
+.PHONY : BestFirstSearch.i
+
+# target to preprocess a source file
+BestFirstSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.i
+.PHONY : BestFirstSearch.cpp.i
+
+BestFirstSearch.s: BestFirstSearch.cpp.s
+
+.PHONY : BestFirstSearch.s
+
+# target to generate assembly for a file
+BestFirstSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.s
+.PHONY : BestFirstSearch.cpp.s
 
 ClientHandler.o: ClientHandler.cpp.o
 
@@ -177,6 +204,33 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
+Graph.o: Graph.cpp.o
+
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -203,6 +257,33 @@ MySerialServer.s: MySerialServer.cpp.s
 MySerialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.s
 .PHONY : MySerialServer.cpp.s
+
+Tests.o: Tests.cpp.o
+
+.PHONY : Tests.o
+
+# target to build an object file
+Tests.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o
+.PHONY : Tests.cpp.o
+
+Tests.i: Tests.cpp.i
+
+.PHONY : Tests.i
+
+# target to preprocess a source file
+Tests.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.i
+.PHONY : Tests.cpp.i
+
+Tests.s: Tests.cpp.s
+
+.PHONY : Tests.s
+
+# target to generate assembly for a file
+Tests.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.s
+.PHONY : Tests.cpp.s
 
 main.o: main.cpp.o
 
@@ -240,15 +321,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Advance_Programming_1_milestone2"
 	@echo "... edit_cache"
+	@echo "... BestFirstSearch.o"
+	@echo "... BestFirstSearch.i"
+	@echo "... BestFirstSearch.s"
 	@echo "... ClientHandler.o"
 	@echo "... ClientHandler.i"
 	@echo "... ClientHandler.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
+	@echo "... Tests.o"
+	@echo "... Tests.i"
+	@echo "... Tests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

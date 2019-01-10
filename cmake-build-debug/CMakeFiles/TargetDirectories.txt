@@ -1,3 +1,3 @@
-/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/Advance_Programming_1_milestone2.dir
-/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/Advance_Programming_1_milestone2.dir
+/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles/edit_cache.dir

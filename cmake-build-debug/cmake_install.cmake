@@ -1,4 +1,4 @@
-# Install script for directory: /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B
+# Install script for directory: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

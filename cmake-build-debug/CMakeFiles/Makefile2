@@ -59,10 +59,10 @@ RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B
+CMAKE_SOURCE_DIR = /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug
+CMAKE_BINARY_DIR = /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Advance_Programming_1_milestone2.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Projec
 CMakeFiles/Advance_Programming_1_milestone2.dir/all:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/depend
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Advance_Programming_1_milestone2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Advance_Programming_1_milestone2"
 .PHONY : CMakeFiles/Advance_Programming_1_milestone2.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/Advance_Programming_1_milestone2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Advance_Programming_1_milestone2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Advance_Programming_1_milestone2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced-Programming-1-Project-Milestone-B/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Advance_Programming_1_milestone2.dir/rule
 
 # Convenience name for target.

@@ -16,12 +16,12 @@ class FileCacheManager: public CacheManager {
 private:
         unordered_map<string, string> cache;    // O(1) average search map, O(N) worse case.
         
-        string& cacheFileName;
+        string cacheFileName;
 
 public:
 
     // constructor:
-    FileCacheManager(string cacheFileName);
+    explicit FileCacheManager(string cacheFileName);
 
     bool isSolutionExists(const std::string &problem) const override;
 

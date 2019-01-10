@@ -3,23 +3,23 @@
 //
 
 #include "FileCacheManager.h"
-#include <ifstream>
-#include <ofstream>
+#include "exceptions.h"
+#include <fstream>
 
 FileCacheManager::FileCacheManager(string fileName) {
     cache = unordered_map<string, string>();
     cacheFileName = fileName;
     
-    ifstream& file;
+    ifstream file;
     file.open(fileName);
     
     // if failed to open file.
     if (!file.is_open()) {
-        throw("cache file does'nt exsists.");
+        throw exceptionsLibrary::BasicException("cache file does'nt exsists.");
     }
     
     // Reads map from the file.
-    string& key, value;
+    string key, value;
     while (file.peek() != EOF) {    
         // entering key - value to map:
         file >> key >> value;
@@ -31,7 +31,7 @@ FileCacheManager::FileCacheManager(string fileName) {
 
 FileCacheManager::~FileCacheManager() {
     // writes cache map to file:
-    ofstream& file;
+    ofstream file;
     file.open(cacheFileName);
     if (!file.is_open()) {
         throw("cache file does'nt exsists.");
@@ -39,10 +39,9 @@ FileCacheManager::~FileCacheManager() {
     
     // saving the map to the file.
     for (auto const& mapItem : cache) {
-        file << mapItem.first << mapItem.second;
+        file << mapItem.first  << endl << mapItem.second << endl;
     }    
     file.close();
-    delete &cache;
 }
 
 bool FileCacheManager::isSolutionExists(const std::string &problem) const {
