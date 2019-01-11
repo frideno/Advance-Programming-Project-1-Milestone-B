@@ -12,7 +12,7 @@ namespace server_side {
   class Server {
 
       // opens a server socket at the specified port @port.
-      virtual void open(int port, const ClientHandler& clientHandler) = 0;
+      virtual void open(int port, ClientHandler& clientHandler) = 0;
 
       // closes the server.
       virtual void stop() = 0;

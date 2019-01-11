@@ -9,17 +9,19 @@
 #include <thread_db.h>
 #include "Searcher.h"
 #include "Searchable.h"
-#include "Graph.h"
+#include "WeightedGraph.h"
+#include "CubeSearch.h"
 
 class Tests {
 
-    template <class T>
-    void testSearcher(Searcher<T>& searcher, Searchable<T>& searchable);
+public:
 
     template <class T>
-            Graph<string>* buildGraphFromString(vector<string>);
+    static void testSearcher(Searcher<T>& searcher, Searchable<T>& searchable);
 
+    static WeightedGraph* buildGraphFromString(vector<std::string>);
 
+    static CubeSearch* buildRandomCubeGraph(int N);
 };
 
 

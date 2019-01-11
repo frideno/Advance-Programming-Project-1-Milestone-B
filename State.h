@@ -24,11 +24,11 @@ public:
     State(T state) :
             _stateRep(state), _cost(INFINITY) {}
 
-    inline T get_stateRep() const {
+    inline T getState() const {
         return _stateRep;
     }
 
-    inline double get_cost() const {
+    inline double getCost() const {
         return _cost;
     }
 
@@ -43,6 +43,8 @@ public:
     void setCameFrom(State<T> *_cameFrom) {
         State::_cameFrom = _cameFrom;
     }
+
+    bool equals(State<T>& other) {return _stateRep == other.get_stateRep();};
 };
 
 #endif //ADVANCE_PROGRAMMING_1_MILESTONE2_STATE_H

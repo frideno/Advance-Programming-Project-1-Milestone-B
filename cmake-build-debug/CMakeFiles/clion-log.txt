@@ -1,4 +1,4 @@
-/snap/clion/57/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B
+/snap/clion/58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug

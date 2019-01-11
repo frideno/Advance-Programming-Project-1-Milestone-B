@@ -3,7 +3,6 @@
 //
 
 #include "Utils.h"
-#include "Interpreter.h"
 
 // turn string to int.
 double Utils::to_number(string s) {
@@ -57,17 +56,5 @@ vector<string> Utils::strSplit(string str, char token) {
     return answer;
 }
 
-vector<Expression*> Utils::SplitCommaArgsToExpressions(vector<string> tokens) {
 
-    vector<Expression*> answer;
-
-    string delimator = ",";
-    vector<vector<string>> splitted = split(tokens, delimator);
-    for (vector<string>& expTokens: splitted) {
-        Expression* e = Interpreter::shuntingYard(expTokens);
-        answer.push_back(e);
-    }
-    return answer;
-
-}
 

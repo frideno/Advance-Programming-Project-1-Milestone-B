@@ -7,7 +7,6 @@
 
 #include <string>
 #include <vector>
-#include "Expression.h"
 
 using namespace std;
 
@@ -25,8 +24,6 @@ public:
     template <class T>
     static vector<vector<T>> split(vector<T>, T token);
 
-    // split the vector by commas (,) and create an expression from each part.
-    static vector<Expression*> SplitCommaArgsToExpressions(vector<string> tokens);
 
     // split string using split.
     static vector<string> strSplit(string str, char token);

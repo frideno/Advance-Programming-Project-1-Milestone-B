@@ -8,7 +8,7 @@
 #include "State.h"
 #include <vector>
 
-    using namespace std;
+    using std::vector;
 
 /*
  * Searchable is an interace representing a search problem.
@@ -16,11 +16,11 @@
     template<class T>
     class Searchable {
 
-        virtual State<T> &getInitialState() const = 0;
+        virtual State<T> getInitialState() const = 0;
 
-        virtual State<T> &getGoalState() const = 0;
+        virtual State<T> getGoalState() const = 0;
 
-        virtual const std::vector<State<T>*> &getAllPossibleStates(State<T> s) = 0;
+        virtual vector<State<T>> getAllPossibleStates(State<T> s) = 0;
 
 
     };

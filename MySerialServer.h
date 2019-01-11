@@ -10,9 +10,21 @@
 
 class MySerialServer: public server_side::Server {
 
-    void open(int port, const ClientHandler &clientHandler) override;
+private:
+    bool _running;
+
+    float _timeoutMin;
+
+    // loop over the clients in serial form on teh socket by socketfd, with the clientHandler.
+    void _loopOverClients(int socketfd, ClientHandler& clientHandler);
+public:
+    MySerialServer();
+
+    void open(int port, ClientHandler &clientHandler) override;
 
     void stop() override;
+
+    ~MySerialServer();
 };
 
 

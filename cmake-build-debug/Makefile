@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/57/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/58/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Projec
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/58/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,59 +123,32 @@ Advance_Programming_1_milestone2/fast:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/build
 .PHONY : Advance_Programming_1_milestone2/fast
 
-BestFirstSearch.o: BestFirstSearch.cpp.o
+CubeSearch.o: CubeSearch.cpp.o
 
-.PHONY : BestFirstSearch.o
-
-# target to build an object file
-BestFirstSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o
-.PHONY : BestFirstSearch.cpp.o
-
-BestFirstSearch.i: BestFirstSearch.cpp.i
-
-.PHONY : BestFirstSearch.i
-
-# target to preprocess a source file
-BestFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.i
-.PHONY : BestFirstSearch.cpp.i
-
-BestFirstSearch.s: BestFirstSearch.cpp.s
-
-.PHONY : BestFirstSearch.s
-
-# target to generate assembly for a file
-BestFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.s
-.PHONY : BestFirstSearch.cpp.s
-
-ClientHandler.o: ClientHandler.cpp.o
-
-.PHONY : ClientHandler.o
+.PHONY : CubeSearch.o
 
 # target to build an object file
-ClientHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/ClientHandler.cpp.o
-.PHONY : ClientHandler.cpp.o
+CubeSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o
+.PHONY : CubeSearch.cpp.o
 
-ClientHandler.i: ClientHandler.cpp.i
+CubeSearch.i: CubeSearch.cpp.i
 
-.PHONY : ClientHandler.i
+.PHONY : CubeSearch.i
 
 # target to preprocess a source file
-ClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/ClientHandler.cpp.i
-.PHONY : ClientHandler.cpp.i
+CubeSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.i
+.PHONY : CubeSearch.cpp.i
 
-ClientHandler.s: ClientHandler.cpp.s
+CubeSearch.s: CubeSearch.cpp.s
 
-.PHONY : ClientHandler.s
+.PHONY : CubeSearch.s
 
 # target to generate assembly for a file
-ClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/ClientHandler.cpp.s
-.PHONY : ClientHandler.cpp.s
+CubeSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.s
+.PHONY : CubeSearch.cpp.s
 
 FileCacheManager.o: FileCacheManager.cpp.o
 
@@ -204,33 +177,6 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
-Graph.o: Graph.cpp.o
-
-.PHONY : Graph.o
-
-# target to build an object file
-Graph.cpp.o:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Graph.cpp.o
-.PHONY : Graph.cpp.o
-
-Graph.i: Graph.cpp.i
-
-.PHONY : Graph.i
-
-# target to preprocess a source file
-Graph.cpp.i:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Graph.cpp.i
-.PHONY : Graph.cpp.i
-
-Graph.s: Graph.cpp.s
-
-.PHONY : Graph.s
-
-# target to generate assembly for a file
-Graph.cpp.s:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Graph.cpp.s
-.PHONY : Graph.cpp.s
-
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -258,6 +204,60 @@ MySerialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.s
 .PHONY : MySerialServer.cpp.s
 
+SearchInGraph.o: SearchInGraph.cpp.o
+
+.PHONY : SearchInGraph.o
+
+# target to build an object file
+SearchInGraph.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.o
+.PHONY : SearchInGraph.cpp.o
+
+SearchInGraph.i: SearchInGraph.cpp.i
+
+.PHONY : SearchInGraph.i
+
+# target to preprocess a source file
+SearchInGraph.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.i
+.PHONY : SearchInGraph.cpp.i
+
+SearchInGraph.s: SearchInGraph.cpp.s
+
+.PHONY : SearchInGraph.s
+
+# target to generate assembly for a file
+SearchInGraph.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.s
+.PHONY : SearchInGraph.cpp.s
+
+SearchProblemClientHandler.o: SearchProblemClientHandler.cpp.o
+
+.PHONY : SearchProblemClientHandler.o
+
+# target to build an object file
+SearchProblemClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o
+.PHONY : SearchProblemClientHandler.cpp.o
+
+SearchProblemClientHandler.i: SearchProblemClientHandler.cpp.i
+
+.PHONY : SearchProblemClientHandler.i
+
+# target to preprocess a source file
+SearchProblemClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.i
+.PHONY : SearchProblemClientHandler.cpp.i
+
+SearchProblemClientHandler.s: SearchProblemClientHandler.cpp.s
+
+.PHONY : SearchProblemClientHandler.s
+
+# target to generate assembly for a file
+SearchProblemClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.s
+.PHONY : SearchProblemClientHandler.cpp.s
+
 Tests.o: Tests.cpp.o
 
 .PHONY : Tests.o
@@ -284,6 +284,60 @@ Tests.s: Tests.cpp.s
 Tests.cpp.s:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.s
 .PHONY : Tests.cpp.s
+
+Utils.o: Utils.cpp.o
+
+.PHONY : Utils.o
+
+# target to build an object file
+Utils.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.o
+.PHONY : Utils.cpp.o
+
+Utils.i: Utils.cpp.i
+
+.PHONY : Utils.i
+
+# target to preprocess a source file
+Utils.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.i
+.PHONY : Utils.cpp.i
+
+Utils.s: Utils.cpp.s
+
+.PHONY : Utils.s
+
+# target to generate assembly for a file
+Utils.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.s
+.PHONY : Utils.cpp.s
+
+WeightedGraph.o: WeightedGraph.cpp.o
+
+.PHONY : WeightedGraph.o
+
+# target to build an object file
+WeightedGraph.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o
+.PHONY : WeightedGraph.cpp.o
+
+WeightedGraph.i: WeightedGraph.cpp.i
+
+.PHONY : WeightedGraph.i
+
+# target to preprocess a source file
+WeightedGraph.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.i
+.PHONY : WeightedGraph.cpp.i
+
+WeightedGraph.s: WeightedGraph.cpp.s
+
+.PHONY : WeightedGraph.s
+
+# target to generate assembly for a file
+WeightedGraph.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.s
+.PHONY : WeightedGraph.cpp.s
 
 main.o: main.cpp.o
 
@@ -321,24 +375,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Advance_Programming_1_milestone2"
 	@echo "... edit_cache"
-	@echo "... BestFirstSearch.o"
-	@echo "... BestFirstSearch.i"
-	@echo "... BestFirstSearch.s"
-	@echo "... ClientHandler.o"
-	@echo "... ClientHandler.i"
-	@echo "... ClientHandler.s"
+	@echo "... CubeSearch.o"
+	@echo "... CubeSearch.i"
+	@echo "... CubeSearch.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
-	@echo "... Graph.o"
-	@echo "... Graph.i"
-	@echo "... Graph.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
+	@echo "... SearchInGraph.o"
+	@echo "... SearchInGraph.i"
+	@echo "... SearchInGraph.s"
+	@echo "... SearchProblemClientHandler.o"
+	@echo "... SearchProblemClientHandler.i"
+	@echo "... SearchProblemClientHandler.s"
 	@echo "... Tests.o"
 	@echo "... Tests.i"
 	@echo "... Tests.s"
+	@echo "... Utils.o"
+	@echo "... Utils.i"
+	@echo "... Utils.s"
+	@echo "... WeightedGraph.o"
+	@echo "... WeightedGraph.i"
+	@echo "... WeightedGraph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -88,19 +88,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BestFirstSearch.cpp">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BestFirstSearch.h">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CacheManager.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/ClientHandler.cpp">
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/ClientHandler.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/ClientHandler.h">
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CubeSearch.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CubeSearch.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/FileCacheManager.cpp">
@@ -109,16 +106,22 @@
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/FileCacheManager.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Graph.cpp">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Graph.h">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MySerialServer.cpp">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MySerialServer.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchInGraph.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchInGraph.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchProblemClientHandler.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchProblemClientHandler.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Searchable.h">
@@ -137,6 +140,18 @@
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Tests.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Utils.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Utils.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/WeightedGraph.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/WeightedGraph.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/exceptions.h">
