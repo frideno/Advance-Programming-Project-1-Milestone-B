@@ -2,44 +2,41 @@
 // Created by omri on 1/11/19.
 //
 
+#include <functional>
 #include "CubeSearch.h"
 #include "exceptions.h"
+#include "Utils.h"
 
-CubeSearch::CubeSearch(int N):
-    _N(N) {
+#define SPACE ' '
 
-    for (int i = 0; i < N; i++) {
+CubeSearch::CubeSearch(int N, int M, vector<vector<double>> weights):
+    CubeSearch(N, M, weights, std::make_pair(0,0), std::make_pair(N-1, M-1)) {}
 
-        vector< State<pair<int, int>>* > row;
-        for (int j = 0; j < N; j++) {
 
-            pair<int, int> p(i, j);
-            State<pair<int,int>>* s = new State<pair<int,int>>(p);
-            s->setCost(0);
-            row.push_back(s);
-        }
-        _states.push_back(row);
-    }
+CubeSearch::CubeSearch(int N, int M, vector<vector<double>> weights, pair<int, int> start, pair<int, int> end):
+    _N(N), _M(M), _s(start), _t(end) {
+// checks for exception in size.
+
+   initStates(weights);
 }
 
-CubeSearch::CubeSearch(int N, vector<vector<double>> weights):
-    _N(N) {
 
-    // checks for exception in size.
 
-    if(weights.size() != N)
+void CubeSearch::initStates(vector<vector<double>> &weights) {
+
+    if(weights.size() != _N)
         throw exceptionsLibrary::BasicException("size N not comfortable for weights size");
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < _N; i++) {
 
         vector< State<pair<int, int>>* > row;
 
         // checks for exception in size.
 
-        if(weights[i].size() != N)
+        if(weights[i].size() != _M)
             throw exceptionsLibrary::BasicException("size N not comfortable for weights size");
 
-        for (int j = 0; j < N; j++) {
+        for (int j = 0; j < _M; j++) {
 
             pair<int, int> p(i, j);
             State<pair<int,int>>* s = new State<pair<int,int>>(p);
@@ -51,30 +48,36 @@ CubeSearch::CubeSearch(int N, vector<vector<double>> weights):
 }
 
 std::string CubeSearch::toString() {
-    
+
     std::string s;
+    s += Utils::to_string(_s.first); s += ','; s+= Utils::to_string(_s.second); s+= '\n';
+    s += Utils::to_string(_t.first); s += ','; s+= Utils::to_string(_t.second); s+= '\n';
+
     for (int i = 0; i < _states.size(); i++) {
         if (_states[i].size() <= 0)
             continue;
 
         int n = _states[i].size() - 1;
         for (int j = 0; j < n; j++) {
-            s += std::to_string(_states[i][j]->getCost());
+            s += Utils::to_string(_states[i][j]->getCost());
             s += " ";
         }
-        s += std::to_string(_states[i][n]->getCost());
+        s += Utils::to_string(_states[i][n]->getCost());
         s += '\n';
 
     }
+    s = s.substr(0, s.length() - 1);
     return  s;
 }
 
+
+
 State<pair<int, int>> CubeSearch::getInitialState() const {
-   return *_states[0][0];
+   return *_states[_s.first][_s.second];
 }
 
 State<pair<int, int>> CubeSearch::getGoalState() const {
-    return *_states[_N-1][_N-1];
+    return *_states[_t.first][_t.second];
 }
 
 vector<State<pair<int, int>>> CubeSearch::getAllPossibleStates(State<pair<int, int>> s) {
@@ -101,7 +104,7 @@ vector<State<pair<int, int>>> CubeSearch::getAllPossibleStates(State<pair<int, i
     }
 
     // check for if s in the most right column
-    if (j != _N - 1) {
+    if (j != _M - 1) {
 
         // adds the right neighbor.
         neighbors.push_back(*_states[i][j+1]);

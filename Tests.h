@@ -21,7 +21,6 @@ public:
 
     static WeightedGraph* buildGraphFromString(vector<std::string>);
 
-    static CubeSearch* buildRandomCubeGraph(int N);
 };
 
 

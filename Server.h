@@ -11,6 +11,7 @@ namespace server_side {
 
   class Server {
 
+  public:
       // opens a server socket at the specified port @port.
       virtual void open(int port, ClientHandler& clientHandler) = 0;
 
@@ -18,6 +19,8 @@ namespace server_side {
       virtual void stop() = 0;
 
       // ... (maybe more)
+
+      //virtual ~Server();
   };
 
 

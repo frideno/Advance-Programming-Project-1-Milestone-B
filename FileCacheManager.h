@@ -23,7 +23,7 @@ public:
     // constructor:
     explicit FileCacheManager(string cacheFileName);
 
-    bool isSolutionExists(const std::string &problem) const override;
+    bool hasSolution(const std::string &problem) const override;
 
     std::string getSolution(const std::string &problem) const override;
 

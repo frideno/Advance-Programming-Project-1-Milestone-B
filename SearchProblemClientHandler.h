@@ -7,13 +7,30 @@
 
 
 #include "ClientHandler.h"
+#include "CacheManager.h"
+#include "CubeSearch.h"
 
 class SearchProblemClientHandler: public ClientHandler {
 
+private:
+
+    // a cache manager for the problems and solutions.
+    CacheManager* cacheManager;
+
+    // a solver to solve the problems.
+    //Solver* solver;
+
+    CubeSearch* buildGraph(string &str);
 
 public:
 
-    void handleClient(int inSocket, int outSocket) override;
+
+    // constructor.
+    SearchProblemClientHandler();
+
+    void handleClient(int socket) override;
+
+    ~SearchProblemClientHandler();
 
 };
 

@@ -6,12 +6,14 @@
 #define ADVANCE_PROGRAMMING_1_MILESTONE2_SEARCHER_H
 
 #include "Searchable.h"
+#include "Path.h"
 
 template <class Solution>
 class Searcher{
 
+public:
     // the search algorithm.
-    virtual Solution search(Searchable<Solution>& searchable) = 0;
+    virtual Path<Solution> search(Searchable<Solution>& searchable) = 0;
 
     // the number of nodes that evaluated in the search.
     virtual int getNumberOfNodesEvaluated() const = 0;

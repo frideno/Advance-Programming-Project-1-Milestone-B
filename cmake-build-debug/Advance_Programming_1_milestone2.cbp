@@ -94,6 +94,12 @@
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/ClientHandler.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CompareAlgorithms.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CompareAlgorithms.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CubeSearch.cpp">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
@@ -110,6 +116,9 @@
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MySerialServer.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Path.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchInGraph.cpp">

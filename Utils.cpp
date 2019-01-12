@@ -56,5 +56,14 @@ vector<string> Utils::strSplit(string str, char token) {
     return answer;
 }
 
+string Utils::to_string(double d) {
+    if ((double)((int) d) == d)
+        return to_string((int) d);
+}
+
+string Utils::to_string(int i) {
+    return std::to_string(i);
+}
+
 
 

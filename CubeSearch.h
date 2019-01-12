@@ -11,18 +11,27 @@
 
 using std::pair;
 using std::map;
+using std::string;
 
 class CubeSearch : public Searchable<pair<int, int>> {
 private:
 
-    int _N;
+    // the cube is N lines, and M columns.
+    int _N, _M;
+
     vector<vector< State<pair<int,int>>* >> _states;
+
+    pair<int, int> _s, _t;  // source and target points.
+
+
+    void initStates(vector<vector<double>>& weights);
 
 public:
 
-    CubeSearch(int N);
 
-    CubeSearch(int N, vector<vector<double>> weights);
+    CubeSearch(int N, int M, vector<vector<double>> weights);
+
+    CubeSearch(int N, int M, vector<vector<double>> weights, pair<int, int> start, pair<int, int> end);
 
     // translate the graph to string.
     std::string toString();

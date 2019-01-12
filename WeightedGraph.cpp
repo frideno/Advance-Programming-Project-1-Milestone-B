@@ -1,6 +1,7 @@
 //
 
 #include "WeightedGraph.h"
+#include "Utils.h"
 #include <algorithm>
 #include <iostream>
 
@@ -52,10 +53,10 @@ std::string WeightedGraph::toString() {
 
         int n = _matrix[i].size() - 1;
         for (int j = 0; j < n; j++) {
-            s += std::to_string(_matrix[i][j]);
+            s += Utils::to_string(_matrix[i][j]);
             s += " ";
         }
-        s += std::to_string(_matrix[i][n]);
+        s += Utils::to_string(_matrix[i][n]);
         s += '\n';
 
     }

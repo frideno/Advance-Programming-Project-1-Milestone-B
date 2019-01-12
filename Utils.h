@@ -16,6 +16,11 @@ public:
     // cast string to int.
     static double to_number(string s);
 
+    // cast a double or int to string.
+    static string to_string(double d);
+    static string to_string(int i);
+
+
     // returns true N times, than after that false.
     static bool getNArguments(int& N);
 

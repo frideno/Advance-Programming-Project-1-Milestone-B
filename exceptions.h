@@ -48,6 +48,14 @@ class BasicException : public std::exception {
                 BasicException(message) {};
     };
 
+    class ClientHandlerException : public ServerException {
+    public :
+        explicit ClientHandlerException(std::string message) :
+                ServerException(message) {};
+    };
+
+
+
 
 };
 #endif //PROG1PROJECT_EXCEPTIONS_H

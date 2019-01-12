@@ -123,6 +123,33 @@ Advance_Programming_1_milestone2/fast:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/build
 .PHONY : Advance_Programming_1_milestone2/fast
 
+CompareAlgorithms.o: CompareAlgorithms.cpp.o
+
+.PHONY : CompareAlgorithms.o
+
+# target to build an object file
+CompareAlgorithms.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o
+.PHONY : CompareAlgorithms.cpp.o
+
+CompareAlgorithms.i: CompareAlgorithms.cpp.i
+
+.PHONY : CompareAlgorithms.i
+
+# target to preprocess a source file
+CompareAlgorithms.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.i
+.PHONY : CompareAlgorithms.cpp.i
+
+CompareAlgorithms.s: CompareAlgorithms.cpp.s
+
+.PHONY : CompareAlgorithms.s
+
+# target to generate assembly for a file
+CompareAlgorithms.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.s
+.PHONY : CompareAlgorithms.cpp.s
+
 CubeSearch.o: CubeSearch.cpp.o
 
 .PHONY : CubeSearch.o
@@ -375,6 +402,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Advance_Programming_1_milestone2"
 	@echo "... edit_cache"
+	@echo "... CompareAlgorithms.o"
+	@echo "... CompareAlgorithms.i"
+	@echo "... CompareAlgorithms.s"
 	@echo "... CubeSearch.o"
 	@echo "... CubeSearch.i"
 	@echo "... CubeSearch.s"

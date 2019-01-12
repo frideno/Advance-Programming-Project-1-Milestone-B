@@ -1,16 +1,13 @@
-by
-sol
-thanks
-sol
-gal
-sol
-bi
-sol
-hi
-sol
-near
-sol
-omri
-sol
-thank
-sol
+5
+0,0
+0,0
+$
+UP RIGHT DOWN DOWN DOWN
+$
+1 2 3
+3 4 5
+0,0
+1,1
+$
+UP RIGHT DOWN DOWN DOWN
+$

@@ -9,6 +9,9 @@
 #include <vector>
 #include <cmath>
 
+
+#define INF_VALUE -1
+
 template<class T>
 class State {
 private:
@@ -20,6 +23,7 @@ private:
     State<T> *_cameFrom;
 
 public:
+
 
     State(T state) :
             _stateRep(state), _cost(INFINITY) {}
@@ -36,12 +40,16 @@ public:
         return _cameFrom;
     }
 
-    void setCost(double _cost) {
-        State::_cost = _cost;
+    void setCost(double cost) {
+        // modify -1 to be infinty.
+        if (cost == INF_VALUE)
+            cost = INFINITY;
+
+        _cost = cost;
     }
 
-    void setCameFrom(State<T> *_cameFrom) {
-        State::_cameFrom = _cameFrom;
+    void setCameFrom(State<T> *cameFrom) {
+        _cameFrom = cameFrom;
     }
 
     bool equals(State<T>& other) {return _stateRep == other.get_stateRep();};

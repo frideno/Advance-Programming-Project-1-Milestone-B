@@ -6,6 +6,8 @@
 #include "exceptions.h"
 #include <fstream>
 
+#define SEPERATOR "$"
+
 FileCacheManager::FileCacheManager(string fileName) {
     cache = unordered_map<string, string>();
     cacheFileName = fileName;
@@ -19,12 +21,33 @@ FileCacheManager::FileCacheManager(string fileName) {
     }
     
     // Reads map from the file.
-    string key, value;
-    while (file.peek() != EOF) {    
-        // entering key - value to map:
-        file >> key >> value;
-        saveSolution(key, value);
-        
+    string key, value, line;
+    string* gain = &key;
+    bool keyIsOn = true;
+
+    while (getline(file, line)) {
+
+        if (line != SEPERATOR)
+        {
+            *(gain) += line;
+            *(gain) += '\n';
+        }
+        else {
+            if (keyIsOn) {
+
+                keyIsOn = false;
+                gain = &value;
+            } else {
+                key = key.substr(0, key.length() - 1);
+                value = value.substr(0, value.length() - 1);
+                saveSolution(key, value);
+                keyIsOn = true;
+                gain = &key;
+                value = "";
+                key = "";
+            }
+        }
+
     }
     file.close();
 }
@@ -39,12 +62,12 @@ FileCacheManager::~FileCacheManager() {
     
     // saving the map to the file.
     for (auto const& mapItem : cache) {
-        file << mapItem.first  << endl << mapItem.second << endl;
+        file << mapItem.first  << endl << SEPERATOR << endl << mapItem.second << endl << SEPERATOR << endl;
     }    
     file.close();
 }
 
-bool FileCacheManager::isSolutionExists(const std::string &problem) const {
+bool FileCacheManager::hasSolution(const std::string &problem) const {
 
     // returns true if the cache map has the input problem.
     return (cache.count(problem) != 0);

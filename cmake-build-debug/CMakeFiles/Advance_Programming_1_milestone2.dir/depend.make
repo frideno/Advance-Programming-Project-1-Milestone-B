@@ -5,6 +5,7 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o: ../CubeSearch.
 CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o: ../CubeSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o: ../Searchable.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o: ../State.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o: ../Utils.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o: ../exceptions.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.o: ../CacheManager.h
@@ -16,7 +17,6 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../ClientH
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../MySerialServer.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../Server.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../exceptions.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.o: ../SearchInGraph.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.o: ../SearchInGraph.h
@@ -25,10 +25,18 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.o: ../State.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.o: ../WeightedGraph.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.o: ../exceptions.h
 
+CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../CacheManager.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../ClientHandler.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../CubeSearch.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../FileCacheManager.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../SearchProblemClientHandler.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../SearchProblemClientHandler.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../Searchable.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../State.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../Utils.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../exceptions.h
 
+CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../CubeSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Searchable.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Searcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../State.h
@@ -43,14 +51,16 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.o: ../Utils.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o: ../Searchable.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o: ../State.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o: ../Utils.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o: ../WeightedGraph.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o: ../WeightedGraph.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o: ../exceptions.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CacheManager.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../ClientHandler.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CubeSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../FileCacheManager.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../SearchInGraph.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../SearchProblemClientHandler.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../State.h
