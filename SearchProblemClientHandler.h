@@ -9,6 +9,8 @@
 #include "ClientHandler.h"
 #include "CacheManager.h"
 #include "CubeSearch.h"
+#include "Path.h"
+#include "Searcher.h"
 
 class SearchProblemClientHandler: public ClientHandler {
 
@@ -18,9 +20,11 @@ private:
     CacheManager* cacheManager;
 
     // a solver to solve the problems.
-    //Solver* solver;
+    Searcher<pair<int, int>>* _searcher;
 
     CubeSearch* buildGraph(string &str);
+
+    string pathToDirections(Path<pair<int, int>>* path);
 
 public:
 

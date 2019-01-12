@@ -72,51 +72,62 @@ std::string CubeSearch::toString() {
 
 
 
-State<pair<int, int>> CubeSearch::getInitialState() const {
-   return *_states[_s.first][_s.second];
+State<pair<int, int>>* CubeSearch::getInitialState() const {
+   return _states[_s.first][_s.second];
 }
 
-State<pair<int, int>> CubeSearch::getGoalState() const {
-    return *_states[_t.first][_t.second];
+State<pair<int, int>>* CubeSearch::getGoalState() const {
+    return _states[_t.first][_t.second];
 }
 
-vector<State<pair<int, int>>> CubeSearch::getAllPossibleStates(State<pair<int, int>> s) {
+vector<State<pair<int, int>>*> CubeSearch::getAllPossibleStates(State<pair<int, int>> s) {
 
-    vector<State<pair<int, int>>> neighbors;
+    vector<State<pair<int, int>>*> neighbors;
 
     // add the up, down, left, right to the neighbors.
 
     pair<int,int> pos = s.getState(), neighbor;
     int i = pos.first, j = pos.second;
 
-    // check for if s is in the most up row
-    if (i != 0) {
-
-        // adds the up neighbor.
-        neighbors.push_back(*_states[i-1][j]);
-    }
-
-    // check for if s in the most down row
-    if (i != _N -1) {
-
-        // adds the down neighbor.
-        neighbors.push_back(*_states[i+1][j]);
-    }
 
     // check for if s in the most right column
     if (j != _M - 1) {
 
         // adds the right neighbor.
-        neighbors.push_back(*_states[i][j+1]);
+        neighbors.push_back(_states[i][j+1]);
     }
+
+
+    // check for if s in the most down row
+    if (i != _N -1) {
+
+        // adds the down neighbor.
+        neighbors.push_back(_states[i+1][j]);
+    }
+
+
+    // check for if s is in the most up row
+    if (i != 0) {
+
+        // adds the up neighbor.
+        neighbors.push_back(_states[i-1][j]);
+    }
+
 
     // check for if s in the most left column
     if (j != 0) {
 
         // adds the left neighbor.
-        neighbors.push_back(*_states[i][j-1]);
+        neighbors.push_back(_states[i][j-1]);
     }
 
     return neighbors;
+
+}
+
+CubeSearch::~CubeSearch() {
+    for (int i = 0; i< _states.size(); i++)
+        for (int j = 0; j < _states[i].size(); j++)
+            delete _states[i][j];
 
 }

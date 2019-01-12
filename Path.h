@@ -13,17 +13,17 @@ class Path {
 private:
     std::vector<T> path;
 
-    double totalCost;
+    double totalCost = 0;
 
 public:
 
-    Path();
+    Path() {};  // enpty path.
 
     Path(const std::vector<T> &path, double totalCost) : path(path), totalCost(totalCost) {}
 
-    std::vector<T> getPath();
+    inline std::vector<T> getPath() {return path;}
 
-    double getCost();
+    inline double getCost() {return totalCost;};
 
 };
 

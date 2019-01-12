@@ -55,8 +55,10 @@ void SearchProblemClientHandler::handleClient(int socket) {
     else {
 
         CubeSearch* graph = buildGraph(problem);
-        //solution = solver->solve(cube)
-        solution = "UP RIGHT DOWN DOWN DOWN";
+
+        Path<pair<int, int>>* p = _searcher->search(*graph);
+        solution = pathToDirections(p);
+
         cacheManager->saveSolution(problem, solution);
     }
 
@@ -65,6 +67,34 @@ void SearchProblemClientHandler::handleClient(int socket) {
     rc = send(socket, outBuffer, solution.length() + 1, 0);
 
 
+}
+
+string SearchProblemClientHandler::pathToDirections(Path<pair<int, int>> *path) {
+    vector<pair<int, int>> p = path->getPath();
+    string directions = "{";
+
+    // translate the cordinates to up,down,right,left directions.
+    for (int i = 0; i < p.size() - 1; i++) {
+
+        int thisX = p[i].first, thisY = p[i].second, nextX = p[i + 1].first, nextY = p[i + 1].second;
+
+        if (thisX < nextX)
+            directions += "RIGHT, ";
+        else if (thisX > nextX)
+            directions += "LEFT, ";
+        else {
+            if (thisY < nextY)
+                directions += "UP, ";
+            else
+                directions += "DOWN, ";
+        }
+    }
+
+    // removes the last ", ".
+    directions = directions.substr(0, directions.length() - 2);
+    directions += "{";
+
+    return directions;
 }
 
 CubeSearch* SearchProblemClientHandler::buildGraph(string& str) {
@@ -113,8 +143,10 @@ CubeSearch* SearchProblemClientHandler::buildGraph(string& str) {
 
 SearchProblemClientHandler::~SearchProblemClientHandler() {
     delete cacheManager;
+    delete _searcher;
 }
 
 SearchProblemClientHandler::SearchProblemClientHandler() {
     cacheManager = new FileCacheManager("../cache.txt");
+    _searcher;  // the best of the runners.
 }

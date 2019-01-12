@@ -36,11 +36,13 @@ public:
     // translate the graph to string.
     std::string toString();
 
-    State<pair<int, int>> getInitialState() const override;
+    State<pair<int, int>>* getInitialState() const override;
 
-    State<pair<int, int>> getGoalState() const override;
+    State<pair<int, int>>* getGoalState() const override;
 
-    vector<State<pair<int, int>>> getAllPossibleStates(State<pair<int, int>> s) override;
+    vector<State<pair<int, int>>*> getAllPossibleStates(State<pair<int, int>> s) override;
+
+    virtual ~CubeSearch();
 };
 
 

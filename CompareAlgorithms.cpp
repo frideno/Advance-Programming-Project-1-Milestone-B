@@ -33,18 +33,49 @@ void CompareAlgorithms::compare(int numberOfMatrices, pair<int, int> &sizesRange
         graphsFile << to_string(size) << endl;
         graphsFile << g->toString() << endl;
 
-        Path<pair<int, int>> path;
         for (int j = 0; j < _algorithms.size(); j++) {
-            path = _algorithms[j]->search(*g);
+            Path<pair<int, int>>* path = _algorithms[j]->search(*g);
+
+
+            vector<pair<int, int>> p = path->getPath();
+            string directions = "{";
+
+            // translate the cordinates to up,down,right,left directions.
+            for (int i = 1; i < p.size(); i++) {
+
+                int thisRow = p[i-1].first, thisCol = p[i-1].second, nextRow = p[i].first, nextCol = p[i].second;
+
+                if (thisCol < nextCol)
+                    directions += "RIGHT, ";
+                else if (thisCol > nextCol)
+                    directions += "LEFT, ";
+                else {
+                    if (thisRow > nextRow)
+                        directions += "UP, ";
+                    else
+                        directions += "DOWN, ";
+                }
+            }
+
+            // removes the last ", ".
+            directions = directions.substr(0, directions.length() - 2);
+            directions += "}";
+
+            cout << directions << endl;
+
+
+
+
+
 
             // record the solution in the file.
             solutionsFile << to_string(_algorithms[j]->getNumberOfNodesEvaluated()) <<
-                ',' << Utils::to_string(path.getCost()) << endl;
+                ',' << Utils::to_string(path->getCost()) << endl;
 
-
+            delete path;
         }
 
-
+        delete g;
 
 
     }

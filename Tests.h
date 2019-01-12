@@ -9,7 +9,7 @@
 #include <thread_db.h>
 #include "Searcher.h"
 #include "Searchable.h"
-#include "WeightedGraph.h"
+
 #include "CubeSearch.h"
 
 class Tests {
@@ -17,9 +17,7 @@ class Tests {
 public:
 
     template <class T>
-    static void testSearcher(Searcher<T>& searcher, Searchable<T>& searchable);
-
-    static WeightedGraph* buildGraphFromString(vector<std::string>);
+    static void MySearcher(Searcher<T>& searcher, Searchable<T>& searchable);
 
 };
 

@@ -5,10 +5,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o"
   "CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o"
-  "CMakeFiles/Advance_Programming_1_milestone2.dir/WeightedGraph.cpp.o"
-  "CMakeFiles/Advance_Programming_1_milestone2.dir/SearchInGraph.cpp.o"
   "CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o"
   "CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o"
+  "CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o"
+  "CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o"
+  "CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o"
   "Advance_Programming_1_milestone2.pdb"
   "Advance_Programming_1_milestone2"
 )

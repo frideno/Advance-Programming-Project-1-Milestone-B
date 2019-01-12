@@ -59,6 +59,7 @@ vector<string> Utils::strSplit(string str, char token) {
 string Utils::to_string(double d) {
     if ((double)((int) d) == d)
         return to_string((int) d);
+    return to_string(d);
 }
 
 string Utils::to_string(int i) {

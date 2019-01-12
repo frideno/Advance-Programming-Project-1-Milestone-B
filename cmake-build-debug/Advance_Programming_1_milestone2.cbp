@@ -88,10 +88,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/A_Star.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/A_Star.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/AbstractSearcher.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/AbstractSearcher.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BFS.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BestFirstSearch.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BestFirstSearch.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CacheManager.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/ClientHandler.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Compare.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CompareAlgorithms.cpp">
@@ -100,16 +124,31 @@
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CompareAlgorithms.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CompareStates.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CubeSearch.cpp">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CubeSearch.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/DFS.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/FileCacheManager.cpp">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/FileCacheManager.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Heuristic.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/HeuristicCompare.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/HeuristicManhatan.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MySerialServer.cpp">
@@ -119,12 +158,6 @@
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Path.h">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchInGraph.cpp">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchInGraph.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/SearchProblemClientHandler.cpp">
@@ -145,6 +178,9 @@
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/State.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/TestSearcher.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Tests.cpp">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
@@ -155,12 +191,6 @@
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/Utils.h">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/WeightedGraph.cpp">
-			<Option target="Advance_Programming_1_milestone2"/>
-		</Unit>
-		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/WeightedGraph.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/exceptions.h">

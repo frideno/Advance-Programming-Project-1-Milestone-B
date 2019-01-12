@@ -52,7 +52,7 @@ public:
         _cameFrom = cameFrom;
     }
 
-    bool equals(State<T>& other) {return _stateRep == other.get_stateRep();};
+    bool operator==(const State<T>& other) {return _stateRep == other.getState();};
 };
 
 #endif //ADVANCE_PROGRAMMING_1_MILESTONE2_STATE_H

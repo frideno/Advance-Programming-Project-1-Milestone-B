@@ -1,9 +1,12 @@
 
 #include <iostream>
-#include "WeightedGraph.h"
+
 #include "Tests.h"
 #include "FileCacheManager.h"
 #include "CompareAlgorithms.h"
+#include "BestFirstSearch.h"
+#include "BFS.h"
+
 
 int main() {
 
@@ -20,7 +23,7 @@ int main() {
 //        vector<int> times;
 //        for (int i = 0; i < algorithms.size(); i++) {
 //
-//            Tests::testSearcher(*algorithms[i], *cs);
+//            Tests::MySearcher(*algorithms[i], *cs);
 //
 //            // records the time (number of nodes evaluated).
 //            scale.addPoint(i, algorithms[i]->getNumberOfNodesEvaluated());
@@ -36,13 +39,14 @@ int main() {
     using std::endl;
 
     vector<Searcher<pair<int, int>>*> algorithms = {
-            new BestFirstSearch(),
-            new DFS(),
-            new BFS(),
-            new AStar()
+            //new BestFirstSearch(),
+           // new DFS(),
+           // new BestFirstSearch<pair<int, int>>() // ,
+          new BFS<pair<int, int>>()
+          //  new AStar()
     };
 
-    CompareAlgorithms comparator(algorithms, "graphs.txt", "solution.txt");
+    CompareAlgorithms comparator(algorithms, "../graphs.txt", "../solution.txt");
     pair<int, int> sizeRange = make_pair(10,50);
     comparator.compare(10, sizeRange);
 

@@ -13,7 +13,7 @@ class Searcher{
 
 public:
     // the search algorithm.
-    virtual Path<Solution> search(Searchable<Solution>& searchable) = 0;
+    virtual Path<Solution>* search(Searchable<Solution>& searchable) = 0;
 
     // the number of nodes that evaluated in the search.
     virtual int getNumberOfNodesEvaluated() const = 0;
