@@ -11,17 +11,17 @@ template <class T>
 class Path {
 
 private:
-    std::vector<T> path;
+    std::vector<T> _path;
 
-    double totalCost = 0;
+    double totalCost = -1;
 
 public:
 
-    Path() {};  // enpty path.
+    Path() {}; // enpty path.
 
-    Path(const std::vector<T> &path, double totalCost) : path(path), totalCost(totalCost) {}
+    Path(const std::vector<T> &path, double totalCost) : _path(path), totalCost(totalCost) {}
 
-    inline std::vector<T> getPath() {return path;}
+    inline std::vector<T> getPath() {return _path;}
 
     inline double getCost() {return totalCost;};
 

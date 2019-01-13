@@ -35,7 +35,7 @@ void MyClientHandler::handleClient(int socket) {
         rc = recv(socket, inBuffer, sizeof(inBuffer), 0);
 
         if (rc < 0) {
-            throw exceptionsLibrary::ClientHandlerException("failed recv data");
+            throw exceptionsLibrary::TimeoutException("failed recv data");
         }
 
         line = string(inBuffer);

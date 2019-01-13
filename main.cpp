@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
           //  new AStar()
     };
 
-    server_side::Server* s = new MySerialServer();
+    server_side::Server* s = new MySerialServer(2);
 
     CacheManager* ca = new FileCacheManager("../cache.txt");
     Searcher<pair<int, int>> *se = new TestSearcher<pair<int,int>>();  // the best of the runners.
@@ -52,8 +52,6 @@ int main(int argc, char *argv[]) {
 //    CompareAlgorithms comparator(algorithms, "../graphs.txt", "../solution.txt");
 //    pair<int, int> sizeRange = make_pair(10,50);
 //    comparator.compare(10, sizeRange);
-    std::this_thread::sleep_for (std::chrono::seconds(40));
-    s->stop();
 
 
     for (int i = 0; i < algorithms.size(); i++) {

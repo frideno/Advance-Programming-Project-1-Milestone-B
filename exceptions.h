@@ -55,6 +55,12 @@ class BasicException : public std::exception {
     };
 
 
+    class TimeoutException : public ServerException {
+    public :
+        explicit TimeoutException(std::string message) :
+                ServerException(message) {};
+    };
+
 
 
 };

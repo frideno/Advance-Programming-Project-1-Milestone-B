@@ -37,38 +37,71 @@ void MySerialServer::open(int port, ClientHandler &clientHandler) {
 
     // run the clients handling loop in other thread.
     thread clients(&MySerialServer::_loopOverClients, this,  ref(clientHandler));
-    clients.detach();
+    clients.join();
 
 }
 
 void MySerialServer::_loopOverClients(ClientHandler &clientHandler) {
 
+    bool notFirst = false;
     while (_running) {
+
         int client_sock;
         listen(_socketfd, 5);
         struct sockaddr_in client;
         socklen_t clilen = sizeof(client);
 
-        timeval timeout;
-        timeout.tv_sec = _timeoutSec;// _timeoutSec seconds timout.
-
-        setsockopt(client_sock, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
-
         // accepting a socket for the client to conncet.
+
+        int opt = 3;
+        setsockopt(_socketfd, SOL_SOCKET, SO_RCVLOWAT,&opt,sizeof(opt));
+
+
+        struct timeval timeout;
+        timeout.tv_sec = _timeoutSec;// _timeoutSec seconds timout.
+        timeout.tv_usec = 0;
+
+
+        // if its not the first round in loop, sets a timeout.
+        if (notFirst) {
+
+            fd_set fdSet;
+            FD_ZERO(&fdSet);
+            FD_SET(_socketfd,&fdSet);
+
+            int ret = select(_socketfd + 1 ,&fdSet, NULL, NULL, &timeout);
+            if (ret <= 0) // timeout
+            {
+                stop();
+                return;
+            }
+
+        } else {
+            notFirst = true;
+        }
 
         client_sock = accept(_socketfd, (struct sockaddr *) &client, &clilen);
         if (client_sock < 0) {
             if (errno == EWOULDBLOCK) {
-                cout << "timeout!" << endl;
-                exit(2);
+                stop();
+                return;
             } else {
                 perror("other error");
-                exit(3);
+                exit(1);
             }
         }
 
+        // setting timeout for client input.
+        //timeout.tv_sec = 20;
+        //setsockopt(client_sock, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
+
         // handle the client as the client handler wants.
-        clientHandler.handleClient(client_sock);
+        try {
+            clientHandler.handleClient(client_sock);
+        } catch (...) {
+            stop();
+            return;
+        }
 
         // closes the client socket.
         close(client_sock);
