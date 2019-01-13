@@ -39,8 +39,7 @@ void CubeSearch::initStates(vector<vector<double>> &weights) {
         for (int j = 0; j < _M; j++) {
 
             pair<int, int> p(i, j);
-            State<pair<int,int>>* s = new State<pair<int,int>>(p);
-            s->setCost(weights[i][j]);
+            State<pair<int,int>>* s = new State<pair<int,int>>(p, weights[i][j]);
             row.push_back(s);
         }
         _states.push_back(row);

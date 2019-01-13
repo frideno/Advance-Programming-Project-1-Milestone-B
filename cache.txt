@@ -1,13 +1,30 @@
-5
-0,0
-0,0
-$
-UP RIGHT DOWN DOWN DOWN
-$
-1 2 3
-3 4 5
-0,0
 1,1
+8,3
+3,3
+4,4
+0,0
+3,1
 $
-UP RIGHT DOWN DOWN DOWN
+0,0
+3,1
+1 1
+8 3
+3 3
+4 4
+RIGHT, DOWN, DOWN, DOWN
+$
+1,1
+2,2
+3,3
+4,4
+0,0
+3,1
+$
+0,0
+3,1
+1 1
+2 2
+3 3
+4 4
+{UP, RIGHT, RIGHT, RIGHT{
 $

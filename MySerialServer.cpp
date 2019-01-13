@@ -3,12 +3,96 @@
 //
 
 #include "MySerialServer.h"
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <errno.h>
+#include <cstdlib>
+#include <iostream>
+#include <functional>
+#include <thread>
 
 MySerialServer::MySerialServer()
-        : _running(true), _timeoutMin(2) {}
+        : _running(true), _timeoutSec(30) {}
 
 
 void MySerialServer::open(int port, ClientHandler &clientHandler) {
+
+    // opening new socket:
+    _socketfd = socket(AF_INET, SOCK_STREAM, 0);
+
+    // making a sockaddr with the port given ,as TCP
+    struct sockaddr_in serv;
+    serv.sin_addr.s_addr = INADDR_ANY;
+    serv.sin_port = htons(port);
+    serv.sin_family = AF_INET;
+
+    // binds the socket and the address.
+    if (bind(_socketfd, (sockaddr * ) & serv, sizeof(serv)) < 0) {
+        cerr << "Bad!" << endl;
+    }
+
+    // run the clients handling loop in other thread.
+    thread clients(&MySerialServer::_loopOverClients, this,  ref(clientHandler));
+    clients.detach();
+
+}
+
+void MySerialServer::_loopOverClients(ClientHandler &clientHandler) {
+
+    while (_running) {
+        int client_sock;
+        listen(_socketfd, 5);
+        struct sockaddr_in client;
+        socklen_t clilen = sizeof(client);
+
+        timeval timeout;
+        timeout.tv_sec = _timeoutSec;// 60 seconds timout.
+        timeout.tv_usec = 0;
+
+        setsockopt(client_sock, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
+
+        // accepting a socket for the client to conncet.
+
+        client_sock = accept(_socketfd, (struct sockaddr *) &client, &clilen);
+        if (client_sock < 0) {
+            if (errno == EWOULDBLOCK) {
+                cout << "timeout!" << endl;
+                exit(2);
+            } else {
+                perror("other error");
+                exit(3);
+            }
+        }
+
+        // handle the client as the client handler wants.
+        clientHandler.handleClient(client_sock);
+
+        // closes the client socket.
+        close(client_sock);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //    // starts the server up:
 //
@@ -54,9 +138,9 @@ void MySerialServer::open(int port, ClientHandler &clientHandler) {
 //    thread t(&MySerialServer::_loopOverClients, this,  sockFD, ref(clientHandler));
 //    t.join();
 
-}
+//}
 
-void MySerialServer::_loopOverClients(int sockFD, ClientHandler &clientHandler) {
+//void MySerialServer::_loopOverClients(int sockFD, ClientHandler &clientHandler) {
 
 //    struct sockaddr_in clientAddress;
 //    int client, clientSocketFD, maxSD, rc;
@@ -124,10 +208,11 @@ void MySerialServer::_loopOverClients(int sockFD, ClientHandler &clientHandler) 
 //        // close the connection with this client.
 //        close(clientSocketFD);
 //    }
-}
+//}
 
 void MySerialServer::stop() {
 
+    close(_socketfd);
     _running = false;
 }
 

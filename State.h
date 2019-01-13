@@ -25,8 +25,12 @@ private:
 public:
 
 
-    State(T state) :
-            _stateRep(state), _cost(INFINITY) {}
+    State(T state, double cost) :
+            _stateRep(state), _cost(cost) {
+        if (cost == INF_VALUE)
+            _cost = INFINITY;
+    }
+
 
     inline T getState() const {
         return _stateRep;
@@ -38,14 +42,6 @@ public:
 
     inline State<T> *getCameFrom() const {
         return _cameFrom;
-    }
-
-    void setCost(double cost) {
-        // modify -1 to be infinty.
-        if (cost == INF_VALUE)
-            cost = INFINITY;
-
-        _cost = cost;
     }
 
     void setCameFrom(State<T> *cameFrom) {

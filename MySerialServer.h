@@ -11,12 +11,15 @@
 class MySerialServer: public server_side::Server {
 
 private:
+
+    int _socketfd;
+
     bool _running;
 
-    float _timeoutMin;
+    float _timeoutSec;
 
     // loop over the clients in serial form on teh socket by socketfd, with the clientHandler.
-    void _loopOverClients(int socketfd, ClientHandler& clientHandler);
+    void _loopOverClients(ClientHandler& clientHandler);
 public:
     MySerialServer();
 

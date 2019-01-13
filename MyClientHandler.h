@@ -12,7 +12,7 @@
 #include "Path.h"
 #include "Searcher.h"
 
-class SearchProblemClientHandler: public ClientHandler {
+class MyClientHandler: public ClientHandler {
 
 private:
 
@@ -21,7 +21,7 @@ private:
 
     // a solver to solve the problems.
     Searcher<pair<int, int>>* _searcher;
-
+    //Solver* s;
     CubeSearch* buildGraph(string &str);
 
     string pathToDirections(Path<pair<int, int>>* path);
@@ -30,11 +30,12 @@ public:
 
 
     // constructor.
-    SearchProblemClientHandler();
+    //MyClientHandler(CacheManager* cache, Solver* solver);
+    MyClientHandler(CacheManager* cache, Searcher<pair<int, int>>* solver);
 
     void handleClient(int socket) override;
 
-    ~SearchProblemClientHandler();
+    ~MyClientHandler();
 
 };
 

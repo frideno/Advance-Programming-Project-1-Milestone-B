@@ -5,14 +5,15 @@
 #include <iostream>
 #include <algorithm>
 #include <sys/socket.h>
-#include "SearchProblemClientHandler.h"
+#include "MyClientHandler.h"
 #include "exceptions.h"
 #include "FileCacheManager.h"
 #include "Utils.h"
+#include "BFS.h"
 
 #define SPACE ','
 
-void SearchProblemClientHandler::handleClient(int socket) {
+void MyClientHandler::handleClient(int socket) {
 
     string problem, solution = "solution does not exsists!";
 
@@ -23,9 +24,10 @@ void SearchProblemClientHandler::handleClient(int socket) {
     int rc;
 
     // reading lines from the socket as long as it is not "end".
-    while (line != "end") {
+    //while (line != "end") {
 
         rc = recv(socket, inBuffer, sizeof(inBuffer), 0);
+
 
         if (rc < 0) {
             throw exceptionsLibrary::ClientHandlerException("failed recv data");
@@ -36,12 +38,13 @@ void SearchProblemClientHandler::handleClient(int socket) {
         // ignore spaces.
         line.erase(std::remove(line.begin(), line.end(), ' '), line.end());
 
-        problem += line;
+        problem = line;
 
-    }
+    //    }
 
     // removes last \n.
-    problem = problem.substr(0, problem.length() - 1);
+    if (problem[problem.length() - 1] == '\n')
+        problem = problem.substr(0, problem.length() - 1);
 
     // check if there is a solution to this problem in the cache manager.
 
@@ -57,7 +60,9 @@ void SearchProblemClientHandler::handleClient(int socket) {
         CubeSearch* graph = buildGraph(problem);
 
         Path<pair<int, int>>* p = _searcher->search(*graph);
-        solution = pathToDirections(p);
+        solution = graph->toString();
+        solution += "\n";
+        solution += pathToDirections(p);
 
         cacheManager->saveSolution(problem, solution);
     }
@@ -69,21 +74,21 @@ void SearchProblemClientHandler::handleClient(int socket) {
 
 }
 
-string SearchProblemClientHandler::pathToDirections(Path<pair<int, int>> *path) {
+string MyClientHandler::pathToDirections(Path<pair<int, int>> *path) {
     vector<pair<int, int>> p = path->getPath();
-    string directions = "{";
+    string directions = "";
 
     // translate the cordinates to up,down,right,left directions.
-    for (int i = 0; i < p.size() - 1; i++) {
+    for (int i = 1; i < p.size(); i++) {
 
-        int thisX = p[i].first, thisY = p[i].second, nextX = p[i + 1].first, nextY = p[i + 1].second;
+        int thisRow = p[i-1].first, thisCol = p[i-1].second, nextRow = p[i].first, nextCol = p[i].second;
 
-        if (thisX < nextX)
+        if (thisCol < nextCol)
             directions += "RIGHT, ";
-        else if (thisX > nextX)
+        else if (thisCol > nextCol)
             directions += "LEFT, ";
         else {
-            if (thisY < nextY)
+            if (thisRow > nextRow)
                 directions += "UP, ";
             else
                 directions += "DOWN, ";
@@ -92,12 +97,11 @@ string SearchProblemClientHandler::pathToDirections(Path<pair<int, int>> *path) 
 
     // removes the last ", ".
     directions = directions.substr(0, directions.length() - 2);
-    directions += "{";
 
     return directions;
 }
 
-CubeSearch* SearchProblemClientHandler::buildGraph(string& str) {
+CubeSearch* MyClientHandler::buildGraph(string& str) {
 
     // split s to lines.
     vector<string> strLines = Utils::strSplit(str, '\n');
@@ -112,7 +116,7 @@ CubeSearch* SearchProblemClientHandler::buildGraph(string& str) {
         vector<string> tLineSplitted = Utils::strSplit(tLine, ','), sLineSplitted = Utils::strSplit(sLine, ',');
 
         // translate the string numbers to ints.
-        pair<int, int> s = make_pair(Utils::to_number(tLineSplitted[0]),  Utils::to_number(tLineSplitted[1])),
+        pair<int, int> s = make_pair(Utils::to_number(sLineSplitted[0]),  Utils::to_number(sLineSplitted[1])),
                 t = make_pair(Utils::to_number(tLineSplitted[0]),  Utils::to_number(tLineSplitted[1]));
 
 
@@ -141,12 +145,10 @@ CubeSearch* SearchProblemClientHandler::buildGraph(string& str) {
 
 }
 
-SearchProblemClientHandler::~SearchProblemClientHandler() {
+MyClientHandler::~MyClientHandler() {
     delete cacheManager;
     delete _searcher;
 }
 
-SearchProblemClientHandler::SearchProblemClientHandler() {
-    cacheManager = new FileCacheManager("../cache.txt");
-    _searcher;  // the best of the runners.
-}
+MyClientHandler::MyClientHandler(CacheManager *cache, Searcher<pair<int, int>> *solver):
+    cacheManager(cache), _searcher(solver){}

@@ -1,11 +1,14 @@
 
 #include <iostream>
+#include <thread>
 
 #include "Tests.h"
 #include "FileCacheManager.h"
 #include "CompareAlgorithms.h"
 #include "BestFirstSearch.h"
 #include "BFS.h"
+#include "MySerialServer.h"
+#include "MyClientHandler.h"
 
 
 int main() {
@@ -46,15 +49,28 @@ int main() {
           //  new AStar()
     };
 
-    CompareAlgorithms comparator(algorithms, "../graphs.txt", "../solution.txt");
-    pair<int, int> sizeRange = make_pair(10,50);
-    comparator.compare(10, sizeRange);
+    server_side::Server* s = new MySerialServer();
+
+    CacheManager* ca = new FileCacheManager("../cache.txt");
+    Searcher<pair<int, int>> *se = new BFS<pair<int,int>>();  // the best of the runners.
+
+    ClientHandler * c = new MyClientHandler(ca, se);
+    s->open(12345, *c);
+
+
+//    CompareAlgorithms comparator(algorithms, "../graphs.txt", "../solution.txt");
+//    pair<int, int> sizeRange = make_pair(10,50);
+//    comparator.compare(10, sizeRange);
+    std::this_thread::sleep_for (std::chrono::seconds(20));
+    s->stop();
+
 
     for (int i = 0; i < algorithms.size(); i++) {
         delete algorithms[i];
     }
-
-//    ClientHandler* clientHandler = new SearchProblemClientHandler();
+    delete c;
+    delete s;
+//    ClientHandler* clientHandler = new MyClientHandler();
 //    clientHandler->handleClient(0,0);
 //    delete clientHandler;
 

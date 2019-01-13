@@ -35,7 +35,6 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o: ../Search
 CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o: ../State.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o: ../exceptions.h
 
-CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o: ../Compare.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o: ../CompareAlgorithms.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o: ../CompareAlgorithms.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o: ../CubeSearch.h
@@ -57,23 +56,27 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.o: ../FileC
 CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.o: ../exceptions.h
 
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../AbstractSearcher.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../BFS.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../CacheManager.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../ClientHandler.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Compare.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../CompareStates.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../CubeSearch.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../FileCacheManager.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../MyClientHandler.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Path.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Searchable.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Searcher.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../State.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Utils.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../exceptions.h
+
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../MySerialServer.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../Server.h
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../CacheManager.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../ClientHandler.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../CubeSearch.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../FileCacheManager.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../Path.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../SearchProblemClientHandler.cpp
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../SearchProblemClientHandler.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../Searchable.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../Searcher.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../State.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../Utils.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o: ../exceptions.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../CubeSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Path.h
@@ -82,7 +85,6 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Searcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../State.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Tests.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Tests.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Utils.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.o: ../Utils.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.o: ../Utils.h
@@ -91,16 +93,19 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../AbstractSearcher.
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../BFS.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CacheManager.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../ClientHandler.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Compare.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CompareAlgorithms.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CompareStates.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CubeSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../FileCacheManager.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../MyClientHandler.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Path.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Searcher.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Server.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../State.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../TestSearcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Tests.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../exceptions.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../main.cpp
