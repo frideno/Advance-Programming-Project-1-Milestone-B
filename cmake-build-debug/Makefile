@@ -285,6 +285,33 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
+MyClientHandler.o: MyClientHandler.cpp.o
+
+.PHONY : MyClientHandler.o
+
+# target to build an object file
+MyClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o
+.PHONY : MyClientHandler.cpp.o
+
+MyClientHandler.i: MyClientHandler.cpp.i
+
+.PHONY : MyClientHandler.i
+
+# target to preprocess a source file
+MyClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.i
+.PHONY : MyClientHandler.cpp.i
+
+MyClientHandler.s: MyClientHandler.cpp.s
+
+.PHONY : MyClientHandler.s
+
+# target to generate assembly for a file
+MyClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.s
+.PHONY : MyClientHandler.cpp.s
+
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -311,33 +338,6 @@ MySerialServer.s: MySerialServer.cpp.s
 MySerialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.s
 .PHONY : MySerialServer.cpp.s
-
-SearchProblemClientHandler.o: SearchProblemClientHandler.cpp.o
-
-.PHONY : SearchProblemClientHandler.o
-
-# target to build an object file
-SearchProblemClientHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.o
-.PHONY : SearchProblemClientHandler.cpp.o
-
-SearchProblemClientHandler.i: SearchProblemClientHandler.cpp.i
-
-.PHONY : SearchProblemClientHandler.i
-
-# target to preprocess a source file
-SearchProblemClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.i
-.PHONY : SearchProblemClientHandler.cpp.i
-
-SearchProblemClientHandler.s: SearchProblemClientHandler.cpp.s
-
-.PHONY : SearchProblemClientHandler.s
-
-# target to generate assembly for a file
-SearchProblemClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/SearchProblemClientHandler.cpp.s
-.PHONY : SearchProblemClientHandler.cpp.s
 
 Tests.o: Tests.cpp.o
 
@@ -447,12 +447,12 @@ help:
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... MyClientHandler.o"
+	@echo "... MyClientHandler.i"
+	@echo "... MyClientHandler.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
-	@echo "... SearchProblemClientHandler.o"
-	@echo "... SearchProblemClientHandler.i"
-	@echo "... SearchProblemClientHandler.s"
 	@echo "... Tests.o"
 	@echo "... Tests.i"
 	@echo "... Tests.s"

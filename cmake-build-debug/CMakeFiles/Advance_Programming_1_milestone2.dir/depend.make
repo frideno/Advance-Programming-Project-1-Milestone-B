@@ -57,7 +57,6 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.o: ../FileC
 CMakeFiles/Advance_Programming_1_milestone2.dir/FileCacheManager.cpp.o: ../exceptions.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../AbstractSearcher.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../BFS.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../CacheManager.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../ClientHandler.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Compare.h
@@ -70,6 +69,7 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Path.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Searchable.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Searcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../State.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../TestSearcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Utils.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../exceptions.h
 
@@ -90,7 +90,6 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.o: ../Utils.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/Utils.cpp.o: ../Utils.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../AbstractSearcher.h
-CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../BFS.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CacheManager.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../ClientHandler.h
@@ -106,6 +105,7 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Server.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../State.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../TestSearcher.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Tests.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../exceptions.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../main.cpp

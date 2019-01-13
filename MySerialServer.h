@@ -23,6 +23,8 @@ private:
 public:
     MySerialServer();
 
+    MySerialServer(double timeout);
+
     void open(int port, ClientHandler &clientHandler) override;
 
     void stop() override;

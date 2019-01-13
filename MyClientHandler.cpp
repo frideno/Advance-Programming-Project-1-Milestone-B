@@ -5,17 +5,18 @@
 #include <iostream>
 #include <algorithm>
 #include <sys/socket.h>
+#include <strings.h>
 #include "MyClientHandler.h"
 #include "exceptions.h"
 #include "FileCacheManager.h"
 #include "Utils.h"
-#include "BFS.h"
+#include "TestSearcher.h"
 
 #define SPACE ','
 
 void MyClientHandler::handleClient(int socket) {
 
-    string problem, solution = "solution does not exsists!";
+    string problem = "" , solution = "-1";
 
     // reads the problem from the server.
 
@@ -24,10 +25,14 @@ void MyClientHandler::handleClient(int socket) {
     int rc;
 
     // reading lines from the socket as long as it is not "end".
-    //while (line != "end") {
+    while (line != "end\n") {
 
+        // add the line recived to the problem.
+        problem += line;
+
+        // get a line from the socket.
+        bzero(inBuffer, 2048);
         rc = recv(socket, inBuffer, sizeof(inBuffer), 0);
-
 
         if (rc < 0) {
             throw exceptionsLibrary::ClientHandlerException("failed recv data");
@@ -38,9 +43,11 @@ void MyClientHandler::handleClient(int socket) {
         // ignore spaces.
         line.erase(std::remove(line.begin(), line.end(), ' '), line.end());
 
-        problem = line;
+        // addes a endline character to end of line if didn't given by client.
+        if (line.length() > 0 && line[line.length() - 1] != '\n')
+            line += '\n';
 
-    //    }
+    }
 
     // removes last \n.
     if (problem[problem.length() - 1] == '\n')
@@ -57,14 +64,21 @@ void MyClientHandler::handleClient(int socket) {
     // if there is not, solves it and save the solution.
     else {
 
+        // create a graph from the input.
+
         CubeSearch* graph = buildGraph(problem);
 
         Path<pair<int, int>>* p = _searcher->search(*graph);
-        solution = graph->toString();
-        solution += "\n";
-        solution += pathToDirections(p);
 
+        // set the solution to the path represents.
+        solution = pathToDirections(p);
+
+        // delete the graph for memory clean.
+        delete graph;
+
+        // saves the problem,solution in the cache.
         cacheManager->saveSolution(problem, solution);
+
     }
 
     // write the solution to the server.

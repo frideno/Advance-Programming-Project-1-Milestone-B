@@ -13,7 +13,10 @@
 #include <thread>
 
 MySerialServer::MySerialServer()
-        : _running(true), _timeoutSec(30) {}
+        : _running(true), _timeoutSec(600) {}
+
+MySerialServer::MySerialServer(double t)
+        : _running(true), _timeoutSec(t) {}
 
 
 void MySerialServer::open(int port, ClientHandler &clientHandler) {
@@ -47,10 +50,9 @@ void MySerialServer::_loopOverClients(ClientHandler &clientHandler) {
         socklen_t clilen = sizeof(client);
 
         timeval timeout;
-        timeout.tv_sec = _timeoutSec;// 60 seconds timout.
-        timeout.tv_usec = 0;
+        timeout.tv_sec = _timeoutSec;// _timeoutSec seconds timout.
 
-        setsockopt(client_sock, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
+        setsockopt(client_sock, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
 
         // accepting a socket for the client to conncet.
 
@@ -71,6 +73,7 @@ void MySerialServer::_loopOverClients(ClientHandler &clientHandler) {
         // closes the client socket.
         close(client_sock);
     }
+
 }
 
 
