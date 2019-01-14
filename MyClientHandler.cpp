@@ -25,7 +25,7 @@ void MyClientHandler::handleClient(int socket) {
     int rc;
 
     // reading lines from the socket as long as it is not "end".
-    while (line != "end\n") {
+    while (line != "end\n" && line != "end\r\n") {
 
         // add the line recived to the problem.
         problem += line;
@@ -34,8 +34,8 @@ void MyClientHandler::handleClient(int socket) {
         bzero(inBuffer, 2048);
         rc = recv(socket, inBuffer, sizeof(inBuffer), 0);
 
-        if (rc < 0) {
-            throw exceptionsLibrary::TimeoutException("failed recv data");
+        if (rc <= 0) {
+            throw exceptionsLibrary::ClientHandlerException("bad recv");
         }
 
         line = string(inBuffer);

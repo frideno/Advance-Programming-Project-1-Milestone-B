@@ -154,6 +154,12 @@
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MyClientHandler.h">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MyParallelServer.cpp">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
+		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MyParallelServer.h">
+			<Option target="Advance_Programming_1_milestone2"/>
+		</Unit>
 		<Unit filename="/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MySerialServer.cpp">
 			<Option target="Advance_Programming_1_milestone2"/>
 		</Unit>

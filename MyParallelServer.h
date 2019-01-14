@@ -1,15 +1,14 @@
 //
-// Created by omri on 1/2/19.
+// Created by omri on 1/14/19.
 //
 
-#ifndef ADVANCE_PROGRAMMING_1_MILESTONE2_MYSERIALSERVER_H
-#define ADVANCE_PROGRAMMING_1_MILESTONE2_MYSERIALSERVER_H
-
+#ifndef ADVANCE_PROGRAMMING_1_MILESTONE2_MYPARALLELSERVER_H
+#define ADVANCE_PROGRAMMING_1_MILESTONE2_MYPARALLELSERVER_H
 
 #include "Server.h"
 #include <mutex>
 
-class MySerialServer: public server_side::Server {
+class MyParallelServer : public server_side::Server{
 
 private:
 
@@ -25,16 +24,16 @@ private:
     // loop over the clients in serial form on teh socket by socketfd, with the clientHandler.
     void _loopOverClients(ClientHandler& clientHandler);
 public:
-    MySerialServer();
+    MyParallelServer();
 
-    MySerialServer(double timeout);
+    MyParallelServer(double timeout);
 
     void open(int port, ClientHandler &clientHandler) override;
 
     void stop() override;
 
-    ~MySerialServer();
+    ~MyParallelServer();
 };
 
 
-#endif //ADVANCE_PROGRAMMING_1_MILESTONE2_MYSERIALSERVER_H
+#endif //ADVANCE_PROGRAMMING_1_MILESTONE2_MYPARALLELSERVER_H

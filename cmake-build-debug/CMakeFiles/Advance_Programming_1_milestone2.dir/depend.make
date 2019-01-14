@@ -73,10 +73,17 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../TestSe
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../Utils.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o: ../exceptions.h
 
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o: ../ClientHandler.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o: ../MyParallelServer.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o: ../Server.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o: ../exceptions.h
+
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../MySerialServer.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../Server.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/MySerialServer.cpp.o: ../exceptions.h
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../CubeSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/Tests.cpp.o: ../Path.h
@@ -99,6 +106,7 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CompareStates.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../CubeSearch.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../MyClientHandler.h
+CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../MyParallelServer.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Path.h
 CMakeFiles/Advance_Programming_1_milestone2.dir/main.cpp.o: ../Searchable.h

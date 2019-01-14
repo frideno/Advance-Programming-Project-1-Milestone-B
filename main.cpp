@@ -9,11 +9,13 @@
 #include "TestSearcher.h"
 #include "MySerialServer.h"
 #include "MyClientHandler.h"
+#include "MyParallelServer.h"
 #include "Utils.h"
+
+void compareAlgosForFile(vector<Searcher<pair<int,int>> *>& algorithms);
 
 
 int main(int argc, char *argv[]) {
-
 
 
     using std::cin;
@@ -32,31 +34,44 @@ int main(int argc, char *argv[]) {
     }
 
 
-    vector<Searcher<pair<int, int>>*> algorithms = {
+    vector<Searcher<pair<int, int>> *> algorithms = {
             //new BestFirstSearch(),
-           // new DFS(),
-           // new BestFirstSearch<pair<int, int>>() // ,
-          new TestSearcher<pair<int, int>>()
-          //  new AStar()
+            // new DFS(),
+            // new BestFirstSearch<pair<int, int>>() // ,
+            new TestSearcher<pair<int, int>>(),
+            new TestSearcher<pair<int, int>>()
+
+            //  new AStar()
     };
 
-    server_side::Server* s = new MySerialServer(2);
+    compareAlgosForFile(algorithms);
 
-    CacheManager* ca = new FileCacheManager("../cache.txt");
-    Searcher<pair<int, int>> *se = new TestSearcher<pair<int,int>>();  // the best of the runners.
+    server_side::Server *s = new MyParallelServer(150);
 
-    ClientHandler * c = new MyClientHandler(ca, se);
-    s->open(portNumber, *c);
+    CacheManager *ca = new FileCacheManager("../cache.txt");
+    Searcher<pair<int, int>> *se = new TestSearcher<pair<int, int>>();  // the best of the runners.
+
+    ClientHandler *c = new MyClientHandler(ca, se);
+    try {
+
+        s->open(portNumber, *c);
 
 
-//    CompareAlgorithms comparator(algorithms, "../graphs.txt", "../solution.txt");
-//    pair<int, int> sizeRange = make_pair(10,50);
-//    comparator.compare(10, sizeRange);
+    } catch (...) {
+        for (int i = 0; i < algorithms.size(); i++) {
+            delete algorithms[i];
+        }
+        delete ca;
+        delete c;
+        delete s;
 
-
-    for (int i = 0; i < algorithms.size(); i++) {
-        delete algorithms[i];
+        // exit with 1.
+        return 1;
     }
-    delete c;
-    delete s;
+}
+void compareAlgosForFile(vector<Searcher<pair<int,int>> *>& algorithms) {
+
+    CompareAlgorithms comparator(algorithms, "../graphs.txt", "../solution.txt");
+    pair<int, int> sizeRange = make_pair(10, 50);
+    comparator.compare(10, sizeRange);
 }
