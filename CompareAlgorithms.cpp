@@ -40,7 +40,7 @@ void CompareAlgorithms::compare(int numberOfMatrices, pair<int, int> &sizesRange
         // run the algorithms on a random matrix.
 
         int size = minSize + i * jump;
-        g = buildRandomCubeGraph(size);
+        g = buildRandomCubeGraph(size, 0.05);
 
         // record the graph in the file.
         graphsFile << to_string(size) << endl;
@@ -70,7 +70,7 @@ CompareAlgorithms::~CompareAlgorithms() {
 
 }
 
-CubeSearch *CompareAlgorithms::buildRandomCubeGraph(int N) {
+CubeSearch *CompareAlgorithms::buildRandomCubeGraph(int N, double p) {
 
 
     vector<vector<double>> v ;
@@ -80,8 +80,15 @@ CubeSearch *CompareAlgorithms::buildRandomCubeGraph(int N) {
         vector<double> vi;
         for (int j = 0; j < N; j++) {
 
-            // addes a weight between 0 and 999.
-            vi.push_back(rand() % 1000);
+            // addes a random weight between 0 and 999.
+
+            int rnd = rand() % 1000;
+
+            // for a problability p, set the weight to be -1 (infinity).
+            if (p != 0 && rand() % (int) (1/p) == 0)
+                rnd = -1;
+
+            vi.push_back(rnd);
         }
 
         v.push_back(vi);

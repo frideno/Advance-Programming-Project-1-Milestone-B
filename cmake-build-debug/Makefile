@@ -123,87 +123,6 @@ Advance_Programming_1_milestone2/fast:
 	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/build
 .PHONY : Advance_Programming_1_milestone2/fast
 
-A_Star.o: A_Star.cpp.o
-
-.PHONY : A_Star.o
-
-# target to build an object file
-A_Star.cpp.o:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o
-.PHONY : A_Star.cpp.o
-
-A_Star.i: A_Star.cpp.i
-
-.PHONY : A_Star.i
-
-# target to preprocess a source file
-A_Star.cpp.i:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.i
-.PHONY : A_Star.cpp.i
-
-A_Star.s: A_Star.cpp.s
-
-.PHONY : A_Star.s
-
-# target to generate assembly for a file
-A_Star.cpp.s:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.s
-.PHONY : A_Star.cpp.s
-
-AbstractSearcher.o: AbstractSearcher.cpp.o
-
-.PHONY : AbstractSearcher.o
-
-# target to build an object file
-AbstractSearcher.cpp.o:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o
-.PHONY : AbstractSearcher.cpp.o
-
-AbstractSearcher.i: AbstractSearcher.cpp.i
-
-.PHONY : AbstractSearcher.i
-
-# target to preprocess a source file
-AbstractSearcher.cpp.i:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.i
-.PHONY : AbstractSearcher.cpp.i
-
-AbstractSearcher.s: AbstractSearcher.cpp.s
-
-.PHONY : AbstractSearcher.s
-
-# target to generate assembly for a file
-AbstractSearcher.cpp.s:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.s
-.PHONY : AbstractSearcher.cpp.s
-
-BestFirstSearch.o: BestFirstSearch.cpp.o
-
-.PHONY : BestFirstSearch.o
-
-# target to build an object file
-BestFirstSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o
-.PHONY : BestFirstSearch.cpp.o
-
-BestFirstSearch.i: BestFirstSearch.cpp.i
-
-.PHONY : BestFirstSearch.i
-
-# target to preprocess a source file
-BestFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.i
-.PHONY : BestFirstSearch.cpp.i
-
-BestFirstSearch.s: BestFirstSearch.cpp.s
-
-.PHONY : BestFirstSearch.s
-
-# target to generate assembly for a file
-BestFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/Advance_Programming_1_milestone2.dir/build.make CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.s
-.PHONY : BestFirstSearch.cpp.s
-
 CompareAlgorithms.o: CompareAlgorithms.cpp.o
 
 .PHONY : CompareAlgorithms.o
@@ -456,15 +375,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Advance_Programming_1_milestone2"
 	@echo "... edit_cache"
-	@echo "... A_Star.o"
-	@echo "... A_Star.i"
-	@echo "... A_Star.s"
-	@echo "... AbstractSearcher.o"
-	@echo "... AbstractSearcher.i"
-	@echo "... AbstractSearcher.s"
-	@echo "... BestFirstSearch.o"
-	@echo "... BestFirstSearch.i"
-	@echo "... BestFirstSearch.s"
 	@echo "... CompareAlgorithms.o"
 	@echo "... CompareAlgorithms.i"
 	@echo "... CompareAlgorithms.s"

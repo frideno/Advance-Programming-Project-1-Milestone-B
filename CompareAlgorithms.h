@@ -29,7 +29,8 @@ private:
     // record file names.
     string _graphs, _solutions;
 
-    CubeSearch* buildRandomCubeGraph(int N);
+    // builds and return a random graph of NxN size, with probability p of a cell to be INFITY value.
+    CubeSearch* buildRandomCubeGraph(int N, double p);
 
 public:
 

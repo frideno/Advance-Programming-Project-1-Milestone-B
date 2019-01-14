@@ -161,48 +161,9 @@ CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/CompareAlgorithms.cpp -o CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.s
 
-CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o: CMakeFiles/Advance_Programming_1_milestone2.dir/flags.make
-CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o: ../A_Star.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/A_Star.cpp
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/A_Star.cpp > CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.i
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/A_Star.cpp -o CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.s
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o: CMakeFiles/Advance_Programming_1_milestone2.dir/flags.make
-CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o: ../AbstractSearcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/AbstractSearcher.cpp
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/AbstractSearcher.cpp > CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.i
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/AbstractSearcher.cpp -o CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.s
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o: CMakeFiles/Advance_Programming_1_milestone2.dir/flags.make
-CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o: ../BestFirstSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BestFirstSearch.cpp
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BestFirstSearch.cpp > CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.i
-
-CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/BestFirstSearch.cpp -o CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.s
-
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o: CMakeFiles/Advance_Programming_1_milestone2.dir/flags.make
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o -c /home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/MyParallelServer.cpp
 
 CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.i: cmake_force
@@ -223,9 +184,6 @@ Advance_Programming_1_milestone2_OBJECTS = \
 "CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o" \
 "CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o" \
 "CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o" \
-"CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o" \
-"CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o" \
-"CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o" \
 "CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o"
 
 # External object files for target Advance_Programming_1_milestone2
@@ -239,13 +197,10 @@ Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.di
 Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/MyClientHandler.cpp.o
 Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/CubeSearch.cpp.o
 Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/CompareAlgorithms.cpp.o
-Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/A_Star.cpp.o
-Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/AbstractSearcher.cpp.o
-Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/BestFirstSearch.cpp.o
 Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/MyParallelServer.cpp.o
 Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/build.make
 Advance_Programming_1_milestone2: CMakeFiles/Advance_Programming_1_milestone2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Advance_Programming_1_milestone2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/omri/Documents/biuCS/prog/Advanced_Programming_1_Project_Milestone_B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Advance_Programming_1_milestone2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Advance_Programming_1_milestone2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

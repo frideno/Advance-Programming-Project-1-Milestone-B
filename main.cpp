@@ -5,11 +5,9 @@
 #include "Tests.h"
 #include "FileCacheManager.h"
 #include "CompareAlgorithms.h"
-#include "BestFirstSearch.h"
 #include "TestSearcher.h"
 #include "MySerialServer.h"
 #include "MyClientHandler.h"
-#include "MyParallelServer.h"
 #include "Utils.h"
 
 void compareAlgosForFile(vector<Searcher<pair<int,int>> *>& algorithms);
@@ -17,7 +15,7 @@ void compareAlgosForFile(vector<Searcher<pair<int,int>> *>& algorithms);
 
 int main(int argc, char *argv[]) {
 
-
+////DFS.h Heuristic.h HeuristicCompare.h HeuristicManhatan.h A_Star.h A_Star.cpp AbstractSearcher.cpp AbstractSearcher.h BestFirstSearch.h BestFirstSearch.cpp
     using std::cin;
     using std::cout;
     using std::cerr;
@@ -46,7 +44,7 @@ int main(int argc, char *argv[]) {
 
     compareAlgosForFile(algorithms);
 
-    server_side::Server *s = new MyParallelServer(150);
+    server_side::Server *s = new MySerialServer(2);
 
     CacheManager *ca = new FileCacheManager("../cache.txt");
     Searcher<pair<int, int>> *se = new TestSearcher<pair<int, int>>();  // the best of the runners.

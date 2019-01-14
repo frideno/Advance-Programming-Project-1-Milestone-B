@@ -6,6 +6,7 @@
 #include "CubeSearch.h"
 #include "exceptions.h"
 #include "Utils.h"
+#include "NormalState.h"
 
 #define SPACE ' '
 
@@ -39,7 +40,7 @@ void CubeSearch::initStates(vector<vector<double>> &weights) {
         for (int j = 0; j < _M; j++) {
 
             pair<int, int> p(i, j);
-            State<pair<int,int>>* s = new State<pair<int,int>>(p, weights[i][j]);
+            State<pair<int,int>>* s = new NormalState<pair<int,int>>(p, weights[i][j]);
             row.push_back(s);
         }
         _states.push_back(row);
@@ -79,13 +80,19 @@ State<pair<int, int>>* CubeSearch::getGoalState() const {
     return _states[_t.first][_t.second];
 }
 
-vector<State<pair<int, int>>*> CubeSearch::getAllPossibleStates(State<pair<int, int>> s) {
+vector<State<pair<int, int>>*> CubeSearch::getAllPossibleStates(State<pair<int, int>> *s) {
+
 
     vector<State<pair<int, int>>*> neighbors;
 
+    // if it is a wall - infiity sets the possible states to empty.
+    if (s->getCost() == INFINITY)
+        return neighbors;
+
+
     // add the up, down, left, right to the neighbors.
 
-    pair<int,int> pos = s.getState(), neighbor;
+    pair<int,int> pos = s->getState(), neighbor;
     int i = pos.first, j = pos.second;
 
 
@@ -93,7 +100,8 @@ vector<State<pair<int, int>>*> CubeSearch::getAllPossibleStates(State<pair<int, 
     if (j != _M - 1) {
 
         // adds the right neighbor.
-        neighbors.push_back(_states[i][j+1]);
+        if (_states[i][j+1]->getCost() != INFINITY)
+            neighbors.push_back(_states[i][j+1]);
     }
 
 
@@ -101,7 +109,8 @@ vector<State<pair<int, int>>*> CubeSearch::getAllPossibleStates(State<pair<int, 
     if (i != _N -1) {
 
         // adds the down neighbor.
-        neighbors.push_back(_states[i+1][j]);
+        if (_states[i+1][j]->getCost() != INFINITY)
+            neighbors.push_back(_states[i+1][j]);
     }
 
 
@@ -109,7 +118,8 @@ vector<State<pair<int, int>>*> CubeSearch::getAllPossibleStates(State<pair<int, 
     if (i != 0) {
 
         // adds the up neighbor.
-        neighbors.push_back(_states[i-1][j]);
+        if (_states[i-1][j]->getCost() != INFINITY)
+            neighbors.push_back(_states[i-1][j]);
     }
 
 
@@ -117,7 +127,8 @@ vector<State<pair<int, int>>*> CubeSearch::getAllPossibleStates(State<pair<int, 
     if (j != 0) {
 
         // adds the left neighbor.
-        neighbors.push_back(_states[i][j-1]);
+        if (_states[i][j-1]->getCost() != INFINITY)
+            neighbors.push_back(_states[i][j-1]);
     }
 
     return neighbors;

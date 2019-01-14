@@ -40,7 +40,7 @@ public:
 
     State<pair<int, int>>* getGoalState() const override;
 
-    vector<State<pair<int, int>>*> getAllPossibleStates(State<pair<int, int>> s) override;
+    vector<State<pair<int, int>>*> getAllPossibleStates(State<pair<int, int>>* s) override;
 
     virtual ~CubeSearch();
 };

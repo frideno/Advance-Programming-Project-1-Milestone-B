@@ -7,48 +7,35 @@
 #define ADVANCE_PROGRAMMING_1_MILESTONE2_STATE_H
 
 #include <vector>
-#include <cmath>
 
-
-#define INF_VALUE -1
-
+/*
+ * State<T> interface represents a verctice in graph, which has a cost, a T representor and possibly a camefrom
+ * other state in a path.
+ *
+ * */
 template<class T>
 class State {
-private:
 
-    T _stateRep;
-
-    double _cost;   // the cost of a path from start to this state.
-
-    State<T> *_cameFrom;
 
 public:
 
 
-    State(T state, double cost) :
-            _stateRep(state), _cost(cost) {
-        if (cost == INF_VALUE)
-            _cost = INFINITY;
-    }
+    // get the state representor T.
 
+    virtual T getState() const = 0;
 
-    inline T getState() const {
-        return _stateRep;
-    }
+    // get the cost of visiting the state.
 
-    inline double getCost() const {
-        return _cost;
-    }
+    virtual double getCost() const = 0;
 
-    inline State<T> *getCameFrom() const {
-        return _cameFrom;
-    }
+    // get the state pointer that we came from to this state in a path.
 
-    void setCameFrom(State<T> *cameFrom) {
-        _cameFrom = cameFrom;
-    }
+    virtual State<T>* getCameFrom() const = 0;
 
-    bool operator==(const State<T>& other) {return _stateRep == other.getState();};
+    // sets the state pointer that we came from to this state in a path.
+    virtual void setCameFrom(State<T>* cameFrom) = 0;
+
+    virtual bool operator==(const State<T>& other) = 0;
 };
 
 #endif //ADVANCE_PROGRAMMING_1_MILESTONE2_STATE_H

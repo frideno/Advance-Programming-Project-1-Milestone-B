@@ -2,6 +2,7 @@
 // created by omri & gal on 12/15/18.
 //
 
+#include <cmath>
 #include "Utils.h"
 
 // turn string to int.
@@ -57,8 +58,18 @@ vector<string> Utils::strSplit(string str, char token) {
 }
 
 string Utils::to_string(double d) {
+    // for double that are integer values:
+
     if ((double)((int) d) == d)
         return to_string((int) d);
+
+    // if its infitity or -infitiy
+    else if (d == INFINITY)
+        return "-1";
+
+    else if (d == -INFINITY)
+        return "-inf";
+
     return to_string(d);
 }
 

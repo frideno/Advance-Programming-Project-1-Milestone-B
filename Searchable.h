@@ -19,7 +19,7 @@
 
         virtual State<T>* getGoalState() const = 0;
 
-        virtual vector<State<T>*> getAllPossibleStates(State<T> s) = 0;
+        virtual vector<State<T>*> getAllPossibleStates(State<T>* s) = 0;
 
 
     };
