@@ -7,6 +7,8 @@
 #include <fstream>
 
 #define SEPERATOR "$"
+std::mutex mute1;
+
 
 FileCacheManager::FileCacheManager(string fileName) {
     cache = unordered_map<string, string>();
@@ -56,10 +58,6 @@ FileCacheManager::~FileCacheManager() {
     // writes cache map to file:
     ofstream file;
     file.open(cacheFileName);
-    if (!file.is_open()) {
-        throw("cache file does'nt exsists.");
-    }
-    
     // saving the map to the file.
     for (auto const& mapItem : cache) {
         file << mapItem.first  << endl << SEPERATOR << endl << mapItem.second << endl << SEPERATOR << endl;
@@ -69,26 +67,37 @@ FileCacheManager::~FileCacheManager() {
 
 bool FileCacheManager::hasSolution(const std::string &problem) const {
 
+    mute1.lock();
     // returns true if the cache map has the input problem.
-    return (cache.count(problem) != 0);
+    bool tmp =  (cache.count(problem) != 0);
+
+    mute1.unlock();
+    return tmp;
 }
 
 std::string FileCacheManager::getSolution(const std::string &problem) const {
 
     // returns nullptr if the problem solution does not exsists
+    mute1.lock();
 
     if (cache.count(problem) == 0) {
+        mute1.unlock();
         return nullptr;
     }
 
     // else, return the solution in avergae O(1).
-    return cache.at(problem);
+    string tmp = cache.at(problem);
+    mute1.unlock();
+    return tmp;
 }
 
 void FileCacheManager::saveSolution(const std::string &problem, const std::string &solution) {
 
+    mute1.lock();
     // sets cache in problem to be solution.
     cache[problem] = solution;
+
+    mute1.unlock();
 }
 
 

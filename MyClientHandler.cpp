@@ -160,8 +160,7 @@ CubeSearch* MyClientHandler::buildGraph(string& str) {
 }
 
 MyClientHandler::~MyClientHandler() {
-    delete cacheManager;
-    delete _searcher;
+
 }
 
 MyClientHandler::MyClientHandler(CacheManager *cache, Searcher<pair<int, int>> *solver):

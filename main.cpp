@@ -9,6 +9,10 @@
 #include "MySerialServer.h"
 #include "MyClientHandler.h"
 #include "Utils.h"
+#include "DFS.h"
+#include "BestFirstSearch.h"
+#include "BFS.h"
+#include "A_Star.h"
 
 void compareAlgosForFile(vector<Searcher<pair<int,int>> *>& algorithms);
 
@@ -34,15 +38,17 @@ int main(int argc, char *argv[]) {
 
     vector<Searcher<pair<int, int>> *> algorithms = {
             //new BestFirstSearch(),
-            // new DFS(),
-            // new BestFirstSearch<pair<int, int>>() // ,
-            new TestSearcher<pair<int, int>>(),
-            new TestSearcher<pair<int, int>>()
+            new DFS<pair<int,int>>(),
+            new BestFirstSearch<pair<int, int>>() ,// ,
+            new BFS<pair<int,int>>(),
+            new BestFirstSearch<pair<int,int>>(),
+            new A_Star<pair<int,int>>()
 
             //  new AStar()
     };
 
     compareAlgosForFile(algorithms);
+    cout<<"over"<<endl;
 
     server_side::Server *s = new MySerialServer(2);
 

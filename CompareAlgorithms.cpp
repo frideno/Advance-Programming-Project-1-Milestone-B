@@ -52,7 +52,7 @@ void CompareAlgorithms::compare(int numberOfMatrices, pair<int, int> &sizesRange
 
             // record the solution in the file.
             solutionsFile << to_string(_algorithms[j]->getNumberOfNodesEvaluated()) <<
-                ',' << Utils::to_string(path->getCost()) << endl;
+                          ',' << Utils::to_string(path->getCost()) << endl;
 
             forTheChart[j] << to_string(size) << ' ' << to_string(_algorithms[j]->getNumberOfNodesEvaluated()) << endl;
             delete path;

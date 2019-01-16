@@ -8,8 +8,6 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
-#include <errno.h>
-#include <cstdlib>
 #include <iostream>
 #include <functional>
 #include <thread>
@@ -50,6 +48,7 @@ void MyParallelServer::_loopOverClients(ClientHandler &clientHandler) {
     bool notFirst = false;
     while (myMutex.try_lock() &&_running) {
 
+
         myMutex.unlock();
         int client_sock;
         listen(_socketfd, 5);
@@ -62,17 +61,24 @@ void MyParallelServer::_loopOverClients(ClientHandler &clientHandler) {
         int opt = 3;
         setsockopt(_socketfd, SOL_SOCKET, SO_RCVLOWAT,&opt,sizeof(opt));
 
-
         struct timeval timeout;
-        timeout.tv_sec = _timeoutSec;// _timeoutSec seconds timout.
         timeout.tv_usec = 0;
 
 
         // if its not the first round in loop, sets a timeout.
+        if (notFirst) {
+            timeout.tv_sec = _timeoutSec;// _timeoutSec seconds timout.
+
+        } else {
+            timeout.tv_sec = 0;// _timeoutSec seconds timout.
+            notFirst = true;
+        }
+
 
         fd_set fdSet;
         FD_ZERO(&fdSet);
         FD_SET(_socketfd,&fdSet);
+
 
         max_fd = _socketfd;
 
