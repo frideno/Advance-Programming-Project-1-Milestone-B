@@ -7,8 +7,8 @@
 #include "CompareAlgorithms.h"
 #include "TestSearcher.h"
 #include "MySerialServer.h"
+#include "MyParallelServer.h"
 #include "MyClientHandler.h"
-#include "Utils.h"
 #include "DFS.h"
 #include "BestFirstSearch.h"
 #include "BFS.h"
@@ -27,33 +27,30 @@ int main(int argc, char *argv[]) {
     using std::vector;
     using std::endl;
 
-    int portNumber = 12345;
-    if (argc > 1) {
-        portNumber = Utils::to_number(argv[1]);
-    } else {
-        cerr << "bad port inserted in args" << endl;
-        exit(1);
-    }
+    int portNumber = 12346;
+//    if (argc > 1) {
+//        portNumber = Utils::to_number(argv[1]);
+//    } else {
+//        cerr << "bad port inserted in args" << endl;
+//        exit(1);
+//    }
 
 
     vector<Searcher<pair<int, int>> *> algorithms = {
             //new BestFirstSearch(),
+            new BestFirstSearch<pair<int, int>>(),
             new DFS<pair<int,int>>(),
-            new BestFirstSearch<pair<int, int>>() ,// ,
             new BFS<pair<int,int>>(),
-            new BestFirstSearch<pair<int,int>>(),
             new A_Star<pair<int,int>>()
 
             //  new AStar()
     };
 
     compareAlgosForFile(algorithms);
-    cout<<"over"<<endl;
 
-    server_side::Server *s = new MySerialServer(2);
-
+    server_side::Server *s = new MyParallelServer(2);
     CacheManager *ca = new FileCacheManager("../cache.txt");
-    Searcher<pair<int, int>> *se = new TestSearcher<pair<int, int>>();  // the best of the runners.
+    Searcher<pair<int, int>> *se = algorithms[3];  // the best of the runners.
 
     ClientHandler *c = new MyClientHandler(ca, se);
     try {
@@ -72,6 +69,13 @@ int main(int argc, char *argv[]) {
         // exit with 1.
         return 1;
     }
+
+    for (int i = 0; i < algorithms.size(); i++) {
+        delete algorithms[i];
+    }
+    delete ca;
+    delete c;
+    delete s;
 }
 void compareAlgosForFile(vector<Searcher<pair<int,int>> *>& algorithms) {
 

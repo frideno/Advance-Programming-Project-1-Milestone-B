@@ -6,7 +6,9 @@
 #define ADVANCE_PROGRAMMING_1_MILESTONE2_MYPARALLELSERVER_H
 
 #include "Server.h"
+#include <thread>
 #include <mutex>
+#include <vector>
 
 class MyParallelServer : public server_side::Server{
 
@@ -18,6 +20,8 @@ private:
     int _socketfd;
 
     bool _running;
+
+    vector<thread> clientThreads;
 
     double _timeoutSec;
 

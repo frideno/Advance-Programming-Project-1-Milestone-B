@@ -10,7 +10,6 @@
 #include <unistd.h>
 #include <iostream>
 #include <functional>
-#include <thread>
 
 MyParallelServer::MyParallelServer()
         : _running(true), _timeoutSec(600) {}
@@ -65,26 +64,35 @@ void MyParallelServer::_loopOverClients(ClientHandler &clientHandler) {
         timeout.tv_usec = 0;
 
 
-        // if its not the first round in loop, sets a timeout.
-        if (notFirst) {
-            timeout.tv_sec = _timeoutSec;// _timeoutSec seconds timout.
-
-        } else {
-            timeout.tv_sec = 0;// _timeoutSec seconds timout.
-            notFirst = true;
-        }
-
 
         fd_set fdSet;
         FD_ZERO(&fdSet);
         FD_SET(_socketfd,&fdSet);
-
-
         max_fd = _socketfd;
 
-        int ret = select(max_fd + 1 ,&fdSet, NULL, NULL, &timeout);
+        int ret;
+
+        // if its not the first round in loop, sets a timeout.
+        if (notFirst) {
+            timeout.tv_sec = _timeoutSec;
+            ret = select(max_fd + 1 ,&fdSet, NULL, NULL, &timeout);
+            ;// _timeoutSec seconds timout.
+
+        } else {
+            ret = select(max_fd + 1 ,&fdSet, NULL, NULL, NULL);
+            notFirst = true;
+        }
+
+
+
         if (ret <= 0) // timeout
         {
+            // joining all open thread of clients.
+
+            for (int i =0; i < clientThreads.size(); i++) {
+                clientThreads[i].join();
+            }
+
             stop();
             return;
         }
@@ -106,8 +114,7 @@ void MyParallelServer::_loopOverClients(ClientHandler &clientHandler) {
                 // handle the client as the client handler wants.
                 try {
 
-                    thread k(&ClientHandler::handleClient, ref(clientHandler),client_sock);
-                    k.detach();
+                    clientThreads.push_back(thread (&ClientHandler::handleClient, ref(clientHandler),client_sock));
 
                     continue;
                     // closes the client socket.
@@ -131,6 +138,7 @@ void MyParallelServer::_loopOverClients(ClientHandler &clientHandler) {
 
 
     }
+
     // opening the lock if locked.
     myMutex.unlock();
 }

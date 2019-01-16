@@ -89,10 +89,20 @@ void MyClientHandler::handleClient(int socket) {
 }
 
 string MyClientHandler::pathToDirections(Path<pair<int, int>> *path) {
+
     vector<pair<int, int>> p = path->getPath();
+
     string directions = "";
 
+
+    // if the path is not existing : cost = -1:
+
+    if (path->getCost() < 0) {
+        return "-1";
+    }
+
     // translate the cordinates to up,down,right,left directions.
+
     for (int i = 1; i < p.size(); i++) {
 
         int thisRow = p[i-1].first, thisCol = p[i-1].second, nextRow = p[i].first, nextCol = p[i].second;
